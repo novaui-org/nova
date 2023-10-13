@@ -1,4 +1,4 @@
-# vuesax-next (v4.x)
+# Nova (v0.1.x)
 
   <img width="100%" src="https://raw.githubusercontent.com/lusaxweb/vuesax-next/master/public/vuesax.gif" alt="vuesax" />
 
