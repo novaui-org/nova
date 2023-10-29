@@ -1,0 +1,31 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "vitepress": "^1.0.0-rc.24"
+  },
+  "dependencies": {
+    "nova": "*"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.7"
+  },
+  "nx": {
+    "targets": {
+      "dev": {
+        "dependsOn": [
+          "build"
+        ]
+      }
+    }
+  }
+}
