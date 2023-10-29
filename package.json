@@ -1,6 +1,10 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "dev": "lerna watch -- lerna run dev",
+    "lerna:dev:docs": "lerna watch --include-dependencies -- lerna run build --scope=\\$LERNA_PACKAGE_NAME & lerna run dev --scope=\"docs\""
+  },
   "workspaces": [
     "packages/*"
   ],
