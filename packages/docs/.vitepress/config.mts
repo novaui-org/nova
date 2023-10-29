@@ -9,8 +9,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      {text: 'Docs', link: '/guide/installation'},//TODO: dynamic
-      {text: 'Components', link: '/components/button'},//TODO: dynamic
+      {text: 'Docs', link: loadDirectoryEntries('Guide', 'guide')[0].link},
+      {text: 'Components', link: loadDirectoryEntries('Components', 'components')[0].link},
     ],
 
     sidebar: [
@@ -48,6 +48,16 @@ function loadDirectoryEntries(title, directory) {
     items: readdirSync(path.join(__dirname, `../${directory}`)).map(fileName => {
       fileName = fileName.split('.')[0]
       return {text: fileName, link: `/${directory}/${fileName}`}
-    }),
+    }).sort(compareStrings),
   }
 }
+
+function compareStrings(a, b) {
+  const titleA = a.title.toLower()
+  const titleB = b.title.toLower()
+  if (titleA < titleB) return -1
+  if (titleA > titleB) return 1
+  return 0
+}
+
+
