@@ -9,8 +9,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      {text: 'Docs', link: loadDirectoryEntries('Guide', 'guide')[0].link},
-      {text: 'Components', link: loadDirectoryEntries('Components', 'components')[0].link},
+      {text: 'Docs', link: loadDirectoryEntries('Guide', 'guide').items[0].link},
+      {text: 'Components', link: loadDirectoryEntries('Components', 'components').items[0].link},
     ],
 
     sidebar: [
@@ -53,8 +53,8 @@ function loadDirectoryEntries(title, directory) {
 }
 
 function compareStrings(a, b) {
-  const titleA = a.title.toLower()
-  const titleB = b.title.toLower()
+  const titleA = a.title.toLowerCase()
+  const titleB = b.title.toLowerCase()
   if (titleA < titleB) return -1
   if (titleA > titleB) return 1
   return 0
