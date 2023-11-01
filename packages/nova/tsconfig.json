@@ -22,6 +22,10 @@
     /* Library - emitDeclarationOnly */
      "outDir": "dist",
      "declaration": true,
+    "paths": {
+      "src/*": ["src/*"],
+      "components/*": ["src/components/*"],
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["src/App.vue", "src/main.ts"],

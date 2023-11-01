@@ -20,9 +20,11 @@
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "types": "vue-tsc",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "icons:generate": "npx ts-node --esm scripts/index.mts icons"
   },
   "dependencies": {
+    "vite-svg-loader": "^4.0.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
