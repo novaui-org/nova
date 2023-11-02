@@ -2,8 +2,9 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "dev:components": "lerna watch --scope=\"nova\" -- lerna run build --scope=\"nova\"",
-    "dev:docs": "lerna run dev --scope=\"docs\"",
+    "dev:icons": "lerna run build --scope=\"@nova/icons\"",
+    "dev:components": "lerna watch --scope=\"@nova/components\"  -- lerna run build --scope=\"@nova/components\"",
+    "dev:docs": "lerna run dev --scope=\"@nova/docs\"",
     "dev": "npm-run-all --parallel dev:*"
   },
   "workspaces": [
