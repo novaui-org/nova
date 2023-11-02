@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import {defineAsyncComponent, ref, shallowRef, watch, computed, FunctionalComponent} from 'vue'
 import {NIconProps} from './types.ts'
-import iconMap from '../../assets/icons/index.ts'
+import NovaIcons from '@nova/icons'
 
 const props = withDefaults(defineProps<NIconProps>(), {size: '16px', color: 'inherit'})
 const cmp = shallowRef<FunctionalComponent | null>(null)
@@ -17,8 +17,8 @@ watch(
   () => props.name,
   () => {
     try {
-      cmp.value = defineAsyncComponent(iconMap[props.name].import)
-      viewBox.value = `0 0 ${iconMap[props.name].width} ${iconMap[props.name].height}`
+      cmp.value = defineAsyncComponent(NovaIcons[props.name].import)
+      viewBox.value = `0 0 ${NovaIcons[props.name].width} ${NovaIcons[props.name].height}`
     } catch (e) {
       if (process.env.DEBUGGING) console.error(`Icon ${props.name} not found!`)
     }
