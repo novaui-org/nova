@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 
-const ICONS_DIR = './src/assets/icons'
-const ICONS_DIR_ABS = '/src/assets/icons'
+const ICONS_DIR = './src'
+const ICONS_DIR_ABS = '/src'
 const ICONS_MAP_FILE = `${ICONS_DIR}/index.ts`
 const DEBUG = !!process.env.DEBUGGING
 

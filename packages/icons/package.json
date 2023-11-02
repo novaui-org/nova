@@ -1,19 +1,19 @@
 {
-  "name": "nova",
+  "name": "@nova/icons",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/nova.umd.cjs",
-  "module": "./dist/nova.js",
+  "main": "./dist/nova-icons.umd.cjs",
+  "module": "./dist/nova-icons.js",
   "exports": {
     ".": {
-      "import": "./dist/nova.js",
-      "require": "./dist/nova.umd.cjs"
-    },
-    "./style.css": "./dist/style.css"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/nova-icons.js",
+      "require": "./dist/nova-icons.umd.cjs"
+    }
   },
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -21,17 +21,14 @@
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "types": "vue-tsc",
     "preview": "vite preview",
-    "icons:generate": "npx ts-node --esm scripts/index.mts icons"
-  },
-  "dependencies": {
-    "vite-svg-loader": "^4.0.0",
-    "vue": "^3.3.4"
+    "icons:generate": "npx ts-node --esm ./scripts/index.mts icons"
   },
   "devDependencies": {
-    "@types/node": "^20.2.5",
-    "@vitejs/plugin-vue": "^4.2.3",
+    "@types/node": "^20.8.10",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.3",
+    "vite-svg-loader": "^4.0.0",
     "vue-tsc": "^1.8.5"
   }
 }
