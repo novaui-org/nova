@@ -53,8 +53,8 @@ function loadDirectoryEntries(title, directory) {
 }
 
 function compareStrings(a, b) {
-  const titleA = a.title.toLowerCase()
-  const titleB = b.title.toLowerCase()
+  const titleA = a.text.toLowerCase()
+  const titleB = b.text.toLowerCase()
   if (titleA < titleB) return -1
   if (titleA > titleB) return 1
   return 0
