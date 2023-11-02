@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "@nova/docs",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -14,7 +14,8 @@
     "vitepress": "^1.0.0-rc.24"
   },
   "dependencies": {
-    "nova": "*"
+    "@nova/components": "*",
+    "@nova/icons": "*"
   },
   "peerDependencies": {
     "vue": "^3.3.7"

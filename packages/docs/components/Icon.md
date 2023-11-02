@@ -1,11 +1,9 @@
 # Icon
 
-
 <script setup>
-import {NIcon} from 'nova'
-import 'nova/style.css'
+import {NIcon} from '@nova/components'
+import '@nova/components/style.css'
 </script>
-
 <n-icon name="vuesax/twotone/watch" />
 
 ::: details Code

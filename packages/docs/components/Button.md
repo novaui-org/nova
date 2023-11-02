@@ -3,8 +3,8 @@
 THis is btn
 
 <script setup>
-import {NButton} from 'nova'
-import 'nova/style.css'
+import {NButton} from '@nova/components'
+import '@nova/components/style.css'
 </script>
 
 <n-button text="Button" />
