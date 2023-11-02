@@ -1,15 +1,21 @@
 import {defineConfig} from 'vite'
-import {resolve} from 'path'
+import {resolve} from 'node:path'
 import vue from '@vitejs/plugin-vue'
-import svgLoader from 'vite-svg-loader';
+import svgLoader from 'vite-svg-loader'
+import path from 'node:path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), svgLoader()],
+  plugins: [vue(), svgLoader({defaultImport: 'component'})],
+  resolve: {
+    alias: {
+      'src': path.resolve(__dirname, './src'),
+    },
+  },
   build: {
     lib: {
       // src/index.ts is where we have exported the component(s)
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: path.resolve(__dirname, 'src/index.ts'), // TODO: update here
       name: 'Nova',
       // the name of the output files when the build is run
       fileName: 'nova',
