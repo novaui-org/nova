@@ -1,0 +1,3 @@
+/* Global scss styles. Must be imported in index.ts. */
+@forward "global/color.variables";
+@forward "global/spacing.variables";

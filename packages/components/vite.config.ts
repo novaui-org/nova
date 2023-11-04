@@ -12,6 +12,13 @@ export default defineConfig({
       'src': path.resolve(__dirname, './src'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "src/styles/index.variables.scss";',
+      },
+    },
+  },
   build: {
     lib: {
       // src/index.ts is where we have exported the component(s)
