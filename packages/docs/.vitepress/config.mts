@@ -26,7 +26,7 @@ export default defineConfig({
       text: 'Edit this page on GitHub',
     },
     lastUpdated: {
-      text: 'Laste updated',
+      text: 'Last updated',
       formatOptions: {
         dateStyle: 'medium',
         timeStyle: 'medium',
