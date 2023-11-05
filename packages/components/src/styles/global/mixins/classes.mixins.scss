@@ -1,0 +1,22 @@
+@use "sass:list";
+
+@mixin generate-color-classes($name, $nameSuffix, $value) {
+  $title: if($nameSuffix, #{$name}-#{$nameSuffix}, #{$name});
+
+  .n-text-#{$title} {
+    color: $value;
+  }
+  .n-bg-#{$title} {
+    background-color: $value;
+  }
+}
+
+@mixin generate--color-classes-from-list($list, $name) {
+  @include generate-color-classes($name, '5', list.nth($list, 1));
+
+
+  @for $i from 2 through (list.length($list) - 1) {
+    $level: ($i - 1) * 10;
+    @include generate-color-classes($name, $level, list.nth($list, $i))
+  }
+}

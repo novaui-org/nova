@@ -1,3 +1,10 @@
 /* Global scss styles. Must be imported in index.ts. */
-@forward "global/color.variables";
-@forward "global/spacing.variables";
+@import "global/variables/color.global";
+@import "global/variables/spacing.global";
+
+@import "global/mixins/classes.mixins";
+@import "global/mixins/spacing.mixins";
+
+@import "global/classes/theme.classes";
+@import "global/classes/color.classes";
+@import "global/classes/spacing.classes";
