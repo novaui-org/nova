@@ -1,0 +1,16 @@
+@use 'sass:list';
+
+@mixin generate-font-classes-from-list($font-weights-list, $font-sizes-list) {
+  @each $weight-name, $weight-value in $font-weights-list {
+    @each $font-size, $values in $font-sizes-list {
+      .n-#{$font-size}--#{$weight-name} {
+        font-family: $n-font-family;
+        color: $n-foreground;
+        font-size: list.nth($values, 1);
+        line-height: list.nth($values, 2);
+        font-weight: $weight-value;
+      }
+    }
+  }
+}
+

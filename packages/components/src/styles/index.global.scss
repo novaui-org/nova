@@ -1,10 +1,16 @@
 /* Global scss styles. Must be imported in index.ts. */
+@import "fonts/open-sans.fonts";
+
 @import "global/variables/color.global";
 @import "global/variables/spacing.global";
+@import "global/variables/theme.global";
+@import "global/variables/font.global";
 
-@import "global/mixins/classes.mixins";
+@import "global/mixins/color.mixins";
 @import "global/mixins/spacing.mixins";
+@import "global/mixins/font.mixins";
 
 @import "global/classes/theme.classes";
 @import "global/classes/color.classes";
 @import "global/classes/spacing.classes";
+@import "global/classes/font.classes";

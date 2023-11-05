@@ -11,7 +11,7 @@
   }
 }
 
-@mixin generate--color-classes-from-list($list, $name) {
+@mixin generate-color-classes-from-list($list, $name) {
   @include generate-color-classes($name, '5', list.nth($list, 1));
 
 
