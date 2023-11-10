@@ -8,6 +8,7 @@
 import {defineAsyncComponent, ref, shallowRef, watch, computed, FunctionalComponent} from 'vue'
 import {NIconProps} from './types.ts'
 import NovaIcons from '@nova/icons'
+import {parseColor} from 'src/utils/color-utils.ts'
 
 const props = withDefaults(defineProps<NIconProps>(), {size: '16px', color: 'inherit'})
 const cmp = shallowRef<FunctionalComponent | null>(null)
@@ -31,11 +32,6 @@ const styles = computed(() => ({
   height: props.size,
   color: parseColor(props.color),
 }))
-
-function parseColor(color: string) {
-  if (color.startsWith('n-')) return getComputedStyle(document.documentElement).getPropertyValue(`--${color}`)
-  else return color
-}
 </script>
 
 <style scoped lang="scss">
