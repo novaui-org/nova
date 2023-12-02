@@ -25,6 +25,8 @@
   },
   "dependencies": {
     "@nova/icons": "*",
+    "color2k": "^2.0.2",
+    "motion": "^10.16.4",
     "vite-plugin-dts": "^3.6.3",
     "vue": "^3.3.4"
   },
