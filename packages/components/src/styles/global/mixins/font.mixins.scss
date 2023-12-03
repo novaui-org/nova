@@ -5,7 +5,6 @@
     @each $font-size, $values in $font-sizes-list {
       .n-#{$font-size}--#{$weight-name} {
         font-family: $n-font-family;
-        color: $n-foreground;
         font-size: list.nth($values, 1);
         line-height: list.nth($values, 2);
         font-weight: $weight-value;
