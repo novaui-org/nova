@@ -1,4 +1,5 @@
 import {ref} from 'vue'
+import {getNumericStyleProperty} from 'src/utils/dom-utils.ts'
 
 export type RippleType = {
   key: string
@@ -7,14 +8,8 @@ export type RippleType = {
   size: number
 }
 
-
 export function getUniqueID(prefix: string) {
   return `${prefix}-${Math.floor(Math.random() * 1000000)}`
-}
-
-export function getNumericStyleProperty(htmlElement: HTMLElement, property: string) {
-  const style = getComputedStyle(htmlElement, null)
-  return parseInt(style.getPropertyValue(property), 10)
 }
 
 export function useRipple() {
