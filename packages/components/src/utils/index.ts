@@ -1,8 +1,2 @@
-import {parseColor, colorsContrast, rgbToHex, hexToRgb} from 'src/utils/color-utils.ts'
-
-export {
-    parseColor,
-    colorsContrast,
-    rgbToHex,
-    hexToRgb
-}
+export * from 'src/utils/color-utils.ts'
+export * from 'src/utils/dom-utils.ts'
