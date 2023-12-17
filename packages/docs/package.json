@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "@nova/components": "*",
-    "@nova/icons": "*"
+    "@nova/icons": "*",
+    "motion": "^10.16.4"
   },
   "peerDependencies": {
     "vue": "^3.3.7"
