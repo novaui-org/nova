@@ -8,6 +8,7 @@ export interface NRadioProps {
   size?: NRadioSize
   description?: string
   color?: string
+  disabled?: boolean
 }
 
 export interface NRadioEmits {

@@ -1,7 +1,7 @@
 <template>
   <label
     class="n-radio"
-    :class="{'n-radio__checked': checked}"
+    :class="{'n-radio__checked': checked, 'n-radio--disabled': disabled}"
     :style="style"
     @click="$emit('update:modelValue', value)"
   >
@@ -17,7 +17,7 @@
       <span class="n-radio__checkmark-inner"/>
     </span>
 
-    <span class="n-radio__label-container">
+    <span class="n-radio__label-container" :class="{'n-radio__label-container--with-description': !!description}">
       <slot v-if="$slots.default" name="default"/>
       <span v-else-if="label" class="n-radio__label" v-text="label"/>
       <span v-if="description" class="n-radio__description" v-text="description"/>
@@ -54,6 +54,8 @@ const style = computed<CSSProperties>(() => {
   display: flex;
   align-items: center;
   gap: $n-space-8;
+  padding: $n-space-8;
+  margin: calc($n-space-8 * -1);
 
   .n-radio__checkmark {
     transition-property: transform, color, background, background-color, border-color, text-decoration-color, fill, stroke;
@@ -98,16 +100,22 @@ const style = computed<CSSProperties>(() => {
     gap: $n-space-2;
 
     .n-radio__label {
-      line-height: 1.3;
+      line-height: 1.5;
       font-size: 1rem;
       color: $n-foreground;
-      font-weight: 500;
+      font-weight: 400;
     }
 
     .n-radio__description {
       color: $n-default-50;
       line-height: 1.3;
       font-size: 0.875rem;
+    }
+
+    &.n-radio__label-container--with-description {
+      .n-radio__label {
+        font-weight: 500;
+      }
     }
   }
 
@@ -140,6 +148,11 @@ const style = computed<CSSProperties>(() => {
     .n-radio__checkmark {
       transform: scale(0.95);
     }
+  }
+
+  &.n-radio--disabled {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 </style>
