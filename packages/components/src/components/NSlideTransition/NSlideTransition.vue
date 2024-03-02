@@ -3,7 +3,7 @@
     <motion
       v-show="visible"
       :exit="exit"
-      :transition="{ easing: [0.25, 0.8, 0.5, 1], duration: 0.3 }"
+      :transition="{ duration: 0.3 }"
       class="n-slide-transition"
     >
       <slot/>
