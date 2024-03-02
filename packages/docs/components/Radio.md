@@ -7,6 +7,8 @@ import BasicUsage from '../examples/components/radio/BasicUsage.vue'
 import DisabledGroup from '../examples/components/radio/DisabledGroup.vue'
 import DisabledOption from '../examples/components/radio/DisabledOption.vue'
 import WithValidation from '../examples/components/radio/WithValidation.vue'
+import WithDescriptionAndValidation from '../examples/components/radio/WithDescriptionAndValidation.vue'
+import WithHint from '../examples/components/radio/WithHint.vue'
 </script>
 
 ## Usage
@@ -57,4 +59,24 @@ import WithValidation from '../examples/components/radio/WithValidation.vue'
 ::: code-group
 <<< @/examples/components/radio/WithValidation.vue#template [Template]
 <<< @/examples/components/radio/WithValidation.vue#script [Script]
+:::
+
+### With description and validation
+
+<with-description-and-validation/>
+
+::: details Code
+::: code-group
+<<< @/examples/components/radio/WithDescriptionAndValidation.vue#template [Template]
+<<< @/examples/components/radio/WithDescriptionAndValidation.vue#script [Script]
+:::
+
+### With hint
+
+<with-hint/>
+
+::: details Code
+::: code-group
+<<< @/examples/components/radio/WithHint.vue#template [Template]
+<<< @/examples/components/radio/WithHint.vue#script [Script]
 :::
