@@ -8,4 +8,5 @@ export interface NRadioGroupProps {
   errorMessage?: string
   errorIcon?: keyof typeof NovaIcons
   successIcon?: keyof typeof NovaIcons
+  hint?: string
 }

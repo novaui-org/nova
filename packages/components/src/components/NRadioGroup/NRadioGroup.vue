@@ -23,6 +23,7 @@
     </div>
 
     <n-input-message class="n-radio-group__message" variant="negative" :visible="!!error" :message="errorMessage"/>
+    <n-input-message class="n-radio-group__message" :visible="!error && !!hint" :message="hint"/>
   </div>
 </template>
 
