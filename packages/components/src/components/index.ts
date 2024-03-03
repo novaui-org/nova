@@ -19,6 +19,9 @@ export * from 'src/components/NRadio/types.ts'
 export {default as NOptionsGroup} from 'src/components/NOptionsGroup/NOptionsGroup.vue'
 export * from 'src/components/NOptionsGroup/types.ts'
 
+export {default as NOption} from 'src/components/NOption/NOption.vue'
+export * from 'src/components/NOption/types.ts'
+
 export {default as NSlideTransition} from 'src/components/NSlideTransition/NSlideTransition.vue'
 export * from 'src/components/NSlideTransition/types.ts'
 
