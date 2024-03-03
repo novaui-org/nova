@@ -16,11 +16,14 @@ export * from 'src/components/NCard/types.ts'
 export {default as NRadio} from 'src/components/NRadio/NRadio.vue'
 export * from 'src/components/NRadio/types.ts'
 
-export {default as NRadioGroup} from 'src/components/NRadioGroup/NRadioGroup.vue'
-export * from 'src/components/NRadioGroup/types.ts'
+export {default as NOptionsGroup} from 'src/components/NOptionsGroup/NOptionsGroup.vue'
+export * from 'src/components/NOptionsGroup/types.ts'
 
 export {default as NSlideTransition} from 'src/components/NSlideTransition/NSlideTransition.vue'
 export * from 'src/components/NSlideTransition/types.ts'
 
 export {default as NInputMessage} from 'src/components/NInputMessage/NInputMessage.vue'
 export * from 'src/components/NInputMessage/types.ts'
+
+export {default as NCheckbox} from 'src/components/NCheckbox/NCheckbox.vue'
+export * from 'src/components/NCheckbox/types.ts'

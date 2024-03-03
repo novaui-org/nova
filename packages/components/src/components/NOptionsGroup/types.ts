@@ -1,6 +1,6 @@
 import NovaIcons from '@nova/icons'
 
-export interface NRadioGroupProps {
+export interface NOptionsGroupProps {
   label: string
   disabled?: boolean
   error?: boolean
