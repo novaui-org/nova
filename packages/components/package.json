@@ -28,7 +28,6 @@
     "@oku-ui/motion-nuxt": "^0.2.1",
     "color2k": "^2.0.2",
     "motion": "^10.16.4",
-    "vite-plugin-dts": "^3.6.3",
     "vue": "^3.3.4"
   },
   "devDependencies": {
@@ -37,6 +36,7 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-svg-loader": "^4.0.0",
+    "vite-plugin-dts": "^3.6.3",
     "vue-tsc": "^1.8.5"
   }
 }
