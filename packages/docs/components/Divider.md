@@ -2,7 +2,6 @@
 
 <script setup>
 import {NDivider, NText, NCard} from '@nova/components'
-import '@nova/components/style.css'
 </script>
 
 ## Usage

@@ -2,7 +2,6 @@
 
 <script setup>
 import {NButton, NIcon} from '@nova/components'
-import '@nova/components/style.css'
 </script>
 
 ## Usage

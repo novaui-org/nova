@@ -2,7 +2,6 @@
 
 <script setup>
 import {NCard, NButton, NText} from '@nova/components'
-import '@nova/components/style.css'
 </script>
 
 ## Usage

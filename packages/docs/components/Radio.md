@@ -1,7 +1,6 @@
 # Radio
 
 <script setup>
-import '@nova/components/style.css'
 import WithDescription from '../examples/components/radio/WithDescription.vue'
 import BasicUsage from '../examples/components/radio/BasicUsage.vue'
 import DisabledGroup from '../examples/components/radio/DisabledGroup.vue'

@@ -2,7 +2,6 @@
 
 <script setup>
 import {NText} from '@nova/components'
-import '@nova/components/style.css'
 </script>
 
   <n-text weight="regular" font-size="h1" html-tag="div"  v-text="'Nova UI Typography'"/>
