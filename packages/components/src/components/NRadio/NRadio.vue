@@ -1,34 +1,34 @@
 <template>
-  <label
+  <n-option
     class="n-radio"
-    :class="{'n-radio__checked': checked, 'n-radio--disabled': disabled}"
-    :style="style"
+    type="radio"
+    :checked="checked"
+    :value="value"
+    :label="label"
+    :name="name"
+    :size="size"
+    :description="description"
+    :color="color"
+    :disabled="disabled"
     @click="$emit('update:modelValue', value)"
   >
-    <input
-      type="radio"
-      class="n-radio__native"
-      :name="name"
-      :value="value"
-      :checked="checked"
-    />
+    <template #checkmark>
+      <span class="n-radio__checkmark">
+        <span class="n-radio__checkmark-inner"/>
+      </span>
+    </template>
 
-    <span class="n-radio__checkmark">
-      <span class="n-radio__checkmark-inner"/>
-    </span>
-
-    <span class="n-radio__label-container" :class="{'n-radio__label-container--with-description': !!description}">
-      <slot v-if="$slots.default" name="default"/>
-      <span v-else-if="label" class="n-radio__label" v-text="label"/>
-      <span v-if="description" class="n-radio__description" v-text="description"/>
-    </span>
-  </label>
+    <!-- Pass all slots (including scopedSlots) to child component -->
+    <template v-for="(_, name) in $slots" :key="name" v-slot:[name]="slotData">
+      <slot :name="name" v-bind="slotData" :key="name"/>
+    </template>
+  </n-option>
 </template>
 
 <script setup lang="ts">
 import {NRadioEmits, NRadioProps} from 'src/components/NRadio/types.ts'
-import {computed, CSSProperties} from 'vue'
-import {parseColor} from 'src/utils'
+import NOption from 'src/components/NOption/NOption.vue'
+import {computed} from 'vue'
 
 defineEmits<NRadioEmits>()
 const props = withDefaults(defineProps<NRadioProps>(), {
@@ -37,25 +37,11 @@ const props = withDefaults(defineProps<NRadioProps>(), {
 })
 
 const checked = computed<boolean>(() => props.modelValue === props.value)
-
-const style = computed<CSSProperties>(() => {
-  return {
-    '--n-radio-color': parseColor(props.color),
-  }
-})
 </script>
 
 <style scoped lang="scss">
 .n-radio {
-  $n-radio-color: var(--n-radio-color);
-
-  cursor: pointer;
-  user-select: none;
-  display: flex;
-  align-items: center;
-  gap: $n-space-8;
-  padding: $n-space-8;
-  margin: calc($n-space-8 * -1);
+  $n-radio-color: var(--n-option-color);
 
   .n-radio__checkmark {
     transition-property: transform, color, background, background-color, border-color, text-decoration-color, fill, stroke;
@@ -86,40 +72,7 @@ const style = computed<CSSProperties>(() => {
     }
   }
 
-  .n-radio__native {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-
-  .n-radio__label-container {
-    display: flex;
-    flex-direction: column;
-    gap: $n-space-2;
-
-    .n-radio__label {
-      line-height: 1.5;
-      font-size: 1rem;
-      color: $n-foreground;
-      font-weight: 400;
-    }
-
-    .n-radio__description {
-      color: $n-default-50;
-      line-height: 1.3;
-      font-size: 0.875rem;
-    }
-
-    &.n-radio__label-container--with-description {
-      .n-radio__label {
-        font-weight: 500;
-      }
-    }
-  }
-
-  &.n-radio__checked {
+  &.n-option__checked {
     .n-radio__checkmark {
       border-color: $n-radio-color;
 
@@ -131,7 +84,7 @@ const style = computed<CSSProperties>(() => {
   }
 
   &:hover {
-    &:not(.n-radio__checked) {
+    &:not(.n-option__checked) {
       .n-radio__checkmark {
         background-color: $n-default-5
       }
@@ -139,7 +92,7 @@ const style = computed<CSSProperties>(() => {
   }
 
   &:active {
-    &:not(.n-radio__checked) {
+    &:not(.n-option__checked) {
       .n-radio__checkmark {
         background-color: $n-default-5
       }
@@ -148,11 +101,6 @@ const style = computed<CSSProperties>(() => {
     .n-radio__checkmark {
       transform: scale(0.95);
     }
-  }
-
-  &.n-radio--disabled {
-    opacity: 0.5;
-    pointer-events: none;
   }
 }
 </style>
