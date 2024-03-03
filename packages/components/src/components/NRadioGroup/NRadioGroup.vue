@@ -34,7 +34,7 @@ import NIcon from 'src/components/NIcon/NIcon.vue'
 import {NSlideTransition} from 'src/components'
 
 withDefaults(defineProps<NRadioGroupProps>(), {
-  errorIcon: 'vuesax/linear/warning-2',
+  errorIcon: 'vuesax/linear/info-circle',
   successIcon: 'vuesax/linear/tick-circle',
 })
 </script>
