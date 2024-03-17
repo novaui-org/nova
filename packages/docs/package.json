@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.69.5",
-    "vitepress": "^1.0.0-rc.24"
+    "sass": "^1.72.0",
+    "vitepress": "^1.0.0-rc.45"
   },
   "dependencies": {
     "@nova/components": "*",
