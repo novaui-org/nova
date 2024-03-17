@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /guide/installation
+      link: /guide/Installation
     - theme: alt
       text: Github
       link: https://github.com/xmajzel/nova
