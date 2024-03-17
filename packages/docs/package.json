@@ -16,7 +16,8 @@
   "dependencies": {
     "@nova/components": "*",
     "@nova/icons": "*",
-    "motion": "^10.16.4"
+    "motion": "^10.16.4",
+    "@oku-ui/motion-nuxt": "^0.2.1"
   },
   "peerDependencies": {
     "vue": "^3.3.7"
