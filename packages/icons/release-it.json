@@ -1,8 +1,3 @@
 {
-  "git": {
-    "tag": false,
-    "commit": false,
-    "push": false,
-    "requireCleanWorkingDir": false
-  }
+  "git": false
 }
