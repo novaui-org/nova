@@ -6,6 +6,7 @@ import path from 'node:path'
 export default defineConfig({
   title: 'Nova',
   description: 'Nova docs',
+  base: '/nova/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
