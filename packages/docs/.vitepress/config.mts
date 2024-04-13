@@ -33,6 +33,9 @@ export default defineConfig({
         timeStyle: 'medium',
       },
     },
+    search:{
+      provider: 'local'
+    }
   },
   /* https://github.com/vitejs/vite/issues/819 */
   /* https://vitepress.dev/reference/site-config#vite */
