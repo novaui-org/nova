@@ -1,6 +1,7 @@
 {
   "git": {
-    "tag": false
+    "tag": false,
+    "requireCleanWorkingDir": false
   },
   "npm": {
     "publish": false

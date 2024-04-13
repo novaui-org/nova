@@ -1,6 +1,7 @@
 {
   "git": {
-    "tag": false
+    "tag": false,
+    "requireCleanWorkingDir": false
   },
   "plugins": {
     "@release-it/bumper": {
