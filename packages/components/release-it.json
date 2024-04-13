@@ -1,5 +1,7 @@
 {
-  "git": false,
+  "git": {
+    "tag": false
+  },
   "plugins": {
     "@release-it/bumper": {
       "out": {
