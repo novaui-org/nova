@@ -1,0 +1,71 @@
+@mixin generate-spacing-classes-from-list($list) {
+  @each $key, $value in $list {
+    .n-pa-#{$key} {
+      padding: $value;
+    }
+    .n-px-#{$key} {
+      padding-right: $value;
+      padding-left: $value;
+    }
+    .n-py-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+    .n-pt-#{$key} {
+      padding-top: $value;
+    }
+    .n-pb-#{$key} {
+      padding-bottom: $value;
+    }
+    .n-pl-#{$key} {
+      padding-left: $value;
+    }
+    .n-pr-#{$key} {
+      padding-right: $value;
+    }
+
+    .n-ma-#{$key} {
+      margin: $value;
+    }
+    .n-mx-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .n-my-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+    .n-mt-#{$key} {
+      margin-top: $value;
+    }
+    .n-mb-#{$key} {
+      margin-bottom: $value;
+    }
+    .n-ml-#{$key} {
+      margin-left: $value;
+    }
+    .n-mr-#{$key} {
+      margin-right: $value;
+    }
+
+    .n-gap-#{$key} {
+      gap: $value;
+    }
+
+    .n-rounded-#{$key} {
+      border-radius: $value;
+    }
+    .n-rounded-tr-#{$key} {
+      border-top-right-radius: $value;
+    }
+    .n-rounded-br-#{$key} {
+      border-bottom-right-radius: $value;
+    }
+    .n-rounded-bl-#{$key} {
+      border-bottom-left-radius: $value;
+    }
+    .n-rounded-tl-#{$key} {
+      border-top-left-radius: $value;
+    }
+  }
+}

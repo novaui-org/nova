@@ -1,0 +1,6 @@
+/* Global scss variables are aliases for the css variables. This file don't have to be imported, because it's injected
+ * via css.preprocessorOptions.scss.additionalData into every Vue file, so it's generally available. */
+@import "variables/color.variables";
+@import "variables/spacing.variables";
+@import "variables/theme.variables";
+@import "variables/font.variables";

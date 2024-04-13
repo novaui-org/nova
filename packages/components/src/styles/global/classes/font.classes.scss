@@ -1,0 +1,74 @@
+html {
+  font-size: $n-font-size-html;
+}
+
+body {
+  font-family: $n-font-family;
+  font-weight: $n-font-weight-default;
+  line-height: $n-line-height-body;
+  color: $n-foreground;
+}
+
+p {
+  margin-bottom: $n-margin-paragraph;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: $n-margin-heading;
+  font-family: $n-font-family;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: $n-margin-h1;
+  font-size: $n-font-size-h1;
+}
+
+h2 {
+  font-size: $n-font-size-h2;
+}
+
+h3 {
+  font-size: $n-font-size-h3;
+}
+
+h4 {
+  font-size: $n-font-size-h4;
+}
+
+h5 {
+  font-size: $n-font-size-h5;
+}
+
+h6 {
+  font-size: $n-font-size-h6;
+}
+
+small {
+  font-size: $n-font-size-small;
+}
+
+/* List of (font-size, line-height) items. */
+$font-sizes-list: (
+        'h1': ($n-font-size-h1, $n-line-height-heading),
+        'h2': ($n-font-size-h2, $n-line-height-heading),
+        'h3': ($n-font-size-h3, $n-line-height-heading),
+        'h4': ($n-font-size-h4, $n-line-height-heading),
+        'h5': ($n-font-size-h5, $n-line-height-heading),
+        'h6': ($n-font-size-h6, $n-line-height-heading),
+        'paragraph': ($n-font-size-html, $n-line-height-body),
+        'small': ($n-font-size-small, $n-line-height-body),
+);
+
+
+$font-weights-list: (
+        'thin': $n-font-weight-thin,
+        'light': $n-font-weight-light,
+        'regular': $n-font-weight-regular,
+        'medium': $n-font-weight-medium,
+        'bold': $n-font-weight-bold,
+        'bolder': $n-font-weight-bolder,
+);
+
+@include generate-font-classes-from-list($font-weights-list, $font-sizes-list);

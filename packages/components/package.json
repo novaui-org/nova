@@ -1,0 +1,42 @@
+{
+  "name": "@nova/components",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/nova.umd.cjs",
+  "module": "./dist/nova.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/nova.js",
+      "require": "./dist/nova.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "types": "vue-tsc --declaration --emitDeclarationOnly",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@nova/icons": "*",
+    "@oku-ui/motion-nuxt": "^0.2.1",
+    "color2k": "^2.0.3",
+    "motion": "^10.16.4",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6",
+    "vite-svg-loader": "^5.1.0",
+    "vite-plugin-dts": "^3.7.3",
+    "vue-tsc": "^2.0.6"
+  }
+}

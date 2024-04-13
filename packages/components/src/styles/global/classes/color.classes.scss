@@ -1,0 +1,35 @@
+@include generate-color-classes('white', null, $n-white);
+@include generate-color-classes('black', null, $n-black);
+
+
+/* Blue */
+$n-blue-list: ($n-blue-5, $n-blue-10, $n-blue-20, $n-blue-30, $n-blue-40, $n-blue-50, $n-blue-60, $n-blue-70, $n-blue-80, $n-blue-90);
+@include generate-color-classes-from-list($n-blue-list, 'blue');
+
+/* Purple */
+$n-purple-list: ($n-purple-5, $n-purple-10, $n-purple-20, $n-purple-30, $n-purple-40, $n-purple-50, $n-purple-60, $n-purple-70, $n-purple-80, $n-purple-90);
+@include generate-color-classes-from-list($n-purple-list, 'purple');
+
+/* Green */
+$n-green-list: ($n-green-5, $n-green-10, $n-green-20, $n-green-30, $n-green-40, $n-green-50, $n-green-60, $n-green-70, $n-green-80, $n-green-90);
+@include generate-color-classes-from-list($n-green-list, 'green');
+
+/* Red */
+$n-red-list: ($n-red-5, $n-red-10, $n-red-20, $n-red-30, $n-red-40, $n-red-50, $n-red-60, $n-red-70, $n-red-80, $n-red-90);
+@include generate-color-classes-from-list($n-red-list, 'red');
+
+/* Pink */
+$n-pink-list: ($n-pink-5, $n-pink-10, $n-pink-20, $n-pink-30, $n-pink-40, $n-pink-50, $n-pink-60, $n-pink-70, $n-pink-80, $n-pink-90);
+@include generate-color-classes-from-list($n-pink-list, 'pink');
+
+/* Yellow */
+$n-yellow-list: ($n-yellow-5, $n-yellow-10, $n-yellow-20, $n-yellow-30, $n-yellow-40, $n-yellow-50, $n-yellow-60, $n-yellow-70, $n-yellow-80, $n-yellow-90);
+@include generate-color-classes-from-list($n-yellow-list, 'yellow');
+
+/* Cyan */
+$n-cyan-list: ($n-cyan-5, $n-cyan-10, $n-cyan-20, $n-cyan-30, $n-cyan-40, $n-cyan-50, $n-cyan-60, $n-cyan-70, $n-cyan-80, $n-cyan-90);
+@include generate-color-classes-from-list($n-cyan-list, 'cyan');
+
+/* Dark */
+$n-dark-list: ($n-dark-5, $n-dark-10, $n-dark-20, $n-dark-30, $n-dark-40, $n-dark-50, $n-dark-60, $n-dark-70, $n-dark-80, $n-dark-90);
+@include generate-color-classes-from-list($n-dark-list, 'dark');

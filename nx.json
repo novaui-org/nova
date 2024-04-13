@@ -1,0 +1,49 @@
+{
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*"
+    ],
+    "production": [
+      "default"
+    ]
+  },
+  "targetDefaults": {
+    "dev": {
+      "dependsOn": [
+        "^dev",
+        "^build"
+      ],
+      "inputs": [
+        "default"
+      ]
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "{projectRoot}/dist"
+      ],
+      "cache": true
+    },
+    "preview": {
+      "dependsOn": [
+        "^preview"
+      ]
+    },
+    "storybook": {
+      "dependsOn": [
+        "^storybook"
+      ]
+    },
+    "build-storybook": {
+      "dependsOn": [
+        "^build-storybook"
+      ],
+      "outputs": [
+        "{projectRoot}/dist"
+      ],
+      "cache": true
+    }
+  }
+}

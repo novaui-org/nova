@@ -1,0 +1,17 @@
+$n-spacing-list: (
+        'none': $n-space-none,
+        '2': $n-space-2,
+        '4': $n-space-4,
+        '6': $n-space-6,
+        '8': $n-space-8,
+        '10': $n-space-10,
+        '12': $n-space-12,
+        '14': $n-space-14,
+        '16': $n-space-16,
+        '20': $n-space-20,
+        '24': $n-space-24,
+        '32': $n-space-32,
+        '48': $n-space-48,
+        '64': $n-space-64,
+);
+@include generate-spacing-classes-from-list($n-spacing-list)

@@ -1,22 +1,18 @@
 {
-  "name": "nova",
-  "version": "0.1.0",
-  "description": "Nova",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node scripts/dev.js",
-    "docs:deploy": "sh scripts/deploy.sh"
-  },
-  "keywords": [],
-  "author": "Jozef Majzel <jozefmajzel1@gmail.com>",
-  "license": "ISC",
+  "name": "root",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.19.0",
-    "shelljs": "^0.8.3",
-    "vue": "^2.6.11"
+  "scripts": {
+    "dev:icons": "lerna run build --scope=\"@nova/icons\"",
+    "dev:components": "lerna watch --scope=\"@nova/components\"  -- lerna run build --scope=\"@nova/components\"",
+    "dev:docs": "lerna run dev --scope=\"@nova/docs\"",
+    "dev": "npm-run-all --parallel dev:*",
+    "build": "lerna run build"
   },
-  "dependencies": {
-    "@types/lodash": "^4.14.150"
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^8.1.2",
+    "npm-run-all": "^4.1.5"
   }
 }
