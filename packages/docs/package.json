@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.72.0",
-    "vitepress": "^1.0.0-rc.45"
+    "sass": "^1.75.0",
+    "vitepress": "^1.1.0"
   },
   "dependencies": {
     "@nova/components": "*",
@@ -20,7 +20,7 @@
     "@oku-ui/motion-nuxt": "^0.2.1"
   },
   "peerDependencies": {
-    "vue": "^3.3.7"
+    "vue": "^3.4.21"
   },
   "nx": {
     "targets": {
