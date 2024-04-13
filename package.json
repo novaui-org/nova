@@ -6,13 +6,16 @@
     "dev:components": "lerna watch --scope=\"@nova/components\"  -- lerna run build --scope=\"@nova/components\"",
     "dev:docs": "lerna run dev --scope=\"@nova/docs\"",
     "dev": "npm-run-all --parallel dev:*",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "release": "npm run release --workspaces && release-it"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "@release-it/bumper": "^6.0.1",
     "lerna": "^8.1.2",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "release-it": "^17.2.0"
   }
 }

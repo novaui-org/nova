@@ -21,7 +21,8 @@
     "dev": "vite",
     "build": "vite build",
     "types": "vue-tsc --declaration --emitDeclarationOnly",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "release-it"
   },
   "dependencies": {
     "@nova/icons": "*",
