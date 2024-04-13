@@ -7,7 +7,7 @@
     "dev:docs": "lerna run dev --scope=\"@nova/docs\"",
     "dev": "npm-run-all --parallel dev:*",
     "build": "lerna run build",
-    "release": "npm run release --workspaces && release-it"
+    "release": "npm run release --workspaces && release-it --ci"
   },
   "workspaces": [
     "packages/*"

@@ -6,7 +6,7 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "release": "release-it"
+    "release": "release-it --ci"
   },
   "author": "",
   "license": "ISC",

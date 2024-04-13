@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "release": "release-it"
+    "release": "release-it --ci"
   },
   "dependencies": {
     "vue": "^3.3.4"

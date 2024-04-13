@@ -22,7 +22,7 @@
     "types": "vue-tsc",
     "preview": "vite preview",
     "icons:generate": "npx ts-node --esm ./scripts/index.mts icons",
-    "release": "release-it"
+    "release": "release-it --ci"
   },
   "devDependencies": {
     "@types/node": "^20.11.28",
