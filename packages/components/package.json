@@ -1,7 +1,7 @@
 {
   "name": "@nova/components",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist"
@@ -22,10 +22,11 @@
     "build": "vite build",
     "types": "vue-tsc --declaration --emitDeclarationOnly",
     "preview": "vite preview",
-    "release": "release-it --ci"
+    "release": "release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
+    "release:next": "release-it --ci --config ./release-it.json --npm.tag=next --preReleaseId=next"
   },
   "dependencies": {
-    "@nova/icons": "*",
+    "@nova/icons": "0.0.2",
     "@oku-ui/motion-nuxt": "^0.2.1",
     "color2k": "^2.0.3",
     "motion": "^10.16.4",

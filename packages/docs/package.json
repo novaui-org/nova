@@ -1,12 +1,13 @@
 {
   "name": "@nova/docs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "release": "release-it --ci"
+    "release": "release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
+    "release:next": "release-it --ci --config ./release-it.json --npm.tag=next --preReleaseId=next"
   },
   "author": "",
   "license": "ISC",
