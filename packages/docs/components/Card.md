@@ -1,7 +1,7 @@
 # Card
 
 <script setup>
-import {NCard, NButton, NText} from '@nova/components'
+import {NCard, NButton, NText} from '@nova-org/components'
 </script>
 
 ## Usage

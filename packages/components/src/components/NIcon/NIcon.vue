@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import {defineAsyncComponent, ref, shallowRef, watch, computed, FunctionalComponent} from 'vue'
 import {NIconProps} from './types.ts'
-import NovaIcons from '@nova/icons'
+import NovaIcons from '@nova-org/icons'
 import {parseColor} from 'src/utils/color-utils.ts'
 
 const props = withDefaults(defineProps<NIconProps>(), {size: '16px', color: 'inherit'})

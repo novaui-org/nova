@@ -1,4 +1,4 @@
-import NovaIcons from '@nova/icons'
+import NovaIcons from '@nova-org/icons'
 
 export interface NIconProps {
   name: keyof typeof NovaIcons

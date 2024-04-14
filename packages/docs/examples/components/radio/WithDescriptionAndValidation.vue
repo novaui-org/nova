@@ -20,7 +20,7 @@
 
 <!-- #region script -->
 <script setup lang="ts">
-import {NRadio, NOptionsGroup} from '@nova/components'
+import {NRadio, NOptionsGroup} from '@nova-org/components'
 import {computed, ref} from 'vue'
 
 const modelValue = ref('solo')

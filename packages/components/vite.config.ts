@@ -30,13 +30,13 @@ export default defineConfig({
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ['vue', '@nova/icons', '@oku-ui/motion-nuxt', 'motion'],
+      external: ['vue', '@nova-org/icons', '@oku-ui/motion-nuxt', 'motion'],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
           vue: 'Vue',
-          '@nova/icons': 'NovaIcons',
+          '@nova-org/icons': 'NovaIcons',
           'motion': 'Motion',
         },
       },

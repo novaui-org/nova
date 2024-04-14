@@ -1,12 +1,13 @@
 {
-  "name": "@nova/docs",
+  "name": "@nova-org/docs",
   "version": "0.0.1",
   "description": "",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "release": "release-it --ci"
+    "release": "release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
+    "release:next": "release-it --ci --config ./release-it.json --preRelease=next"
   },
   "author": "",
   "license": "ISC",
@@ -15,8 +16,8 @@
     "vitepress": "^1.1.0"
   },
   "dependencies": {
-    "@nova/components": "*",
-    "@nova/icons": "*",
+    "@nova-org/components": "*",
+    "@nova-org/icons": "*",
     "motion": "^10.16.4",
     "@oku-ui/motion-nuxt": "^0.2.1"
   },

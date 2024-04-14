@@ -15,7 +15,7 @@
 
 <!-- #region script -->
 <script setup lang="ts">
-import {NRadio, NOptionsGroup} from '@nova/components'
+import {NRadio, NOptionsGroup} from '@nova-org/components'
 import {ref} from 'vue'
 
 const modelValue = ref(null)

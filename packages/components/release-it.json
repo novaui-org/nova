@@ -1,14 +1,11 @@
 {
-  "git": {
-    "commitsPath": "../../",
-    "requireCleanWorkingDir": false
-  },
+  "git": false,
   "plugins": {
     "@release-it/bumper": {
       "out": {
         "file": "package.json",
         "path": [
-          "dependencies.@nova/icons"
+          "dependencies.@nova-org/icons"
         ]
       }
     }

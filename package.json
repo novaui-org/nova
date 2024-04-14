@@ -1,19 +1,25 @@
 {
-  "name": "root",
+  "name": "@nova-org/nova",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev:icons": "lerna run build --scope=\"@nova/icons\"",
-    "dev:components": "lerna watch --scope=\"@nova/components\"  -- lerna run build --scope=\"@nova/components\"",
-    "dev:docs": "lerna run dev --scope=\"@nova/docs\"",
+    "dev:icons": "lerna run build --scope=\"@nova-org/icons\"",
+    "dev:components": "lerna watch --scope=\"@nova-org/components\"  -- lerna run build --scope=\"@nova-org/components\"",
+    "dev:docs": "lerna run dev --scope=\"@nova-org/docs\"",
     "dev": "npm-run-all --parallel dev:*",
     "build": "lerna run build",
-    "release": "npm run release --workspaces && release-it --ci"
+    "release": "npm run release --workspaces && release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
+    "release:next": "npm run release:next --workspaces && release-it --ci --config ./release-it.json --preRelease=next"
   },
   "workspaces": [
-    "packages/*"
+    "packages/icons",
+    "packages/components",
+    "packages/storybook",
+    "packages/docs"
   ],
   "devDependencies": {
     "@release-it/bumper": "^6.0.1",
+    "@release-it/conventional-changelog": "^8.0.1",
     "lerna": "^8.1.2",
     "npm-run-all": "^4.1.5",
     "release-it": "^17.2.0"

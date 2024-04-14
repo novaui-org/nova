@@ -1,5 +1,5 @@
 {
-  "name": "@nova/storybook",
+  "name": "@nova-org/storybook",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "release": "release-it --ci"
+    "release": "release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
+    "release:next": "release-it --ci --config ./release-it.json --preRelease=next"
   },
   "dependencies": {
     "vue": "^3.3.4"

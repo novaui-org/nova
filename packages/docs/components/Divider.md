@@ -1,7 +1,7 @@
 # Divider
 
 <script setup>
-import {NDivider, NText, NCard} from '@nova/components'
+import {NDivider, NText, NCard} from '@nova-org/components'
 </script>
 
 ## Usage

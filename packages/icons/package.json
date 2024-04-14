@@ -1,5 +1,5 @@
 {
-  "name": "@nova/icons",
+  "name": "@nova-org/icons",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -22,7 +22,8 @@
     "types": "vue-tsc",
     "preview": "vite preview",
     "icons:generate": "npx ts-node --esm ./scripts/index.mts icons",
-    "release": "release-it --ci"
+    "release": "release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
+    "release:next": "release-it --ci --config ./release-it.json --preRelease=next"
   },
   "devDependencies": {
     "@types/node": "^20.11.28",

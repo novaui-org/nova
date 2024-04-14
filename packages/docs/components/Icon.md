@@ -1,7 +1,7 @@
 # Icon
 
 <script setup>
-import {NIcon} from '@nova/components'
+import {NIcon} from '@nova-org/components'
 </script>
 
 <n-icon name="vuesax/twotone/watch" />

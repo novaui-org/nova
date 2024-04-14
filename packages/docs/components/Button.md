@@ -1,7 +1,7 @@
 # Button
 
 <script setup>
-import {NButton, NIcon} from '@nova/components'
+import {NButton, NIcon} from '@nova-org/components'
 </script>
 
 ## Usage
@@ -36,7 +36,7 @@ import {NButton, NIcon} from '@nova/components'
 ```vue [Script]
 
 <script setup>
-  import {NButton} from '@nova/components'
+  import {NButton} from '@nova-org/components'
 </script>
 ```
 
@@ -70,7 +70,7 @@ import {NButton, NIcon} from '@nova/components'
 ```vue [Script]
 
 <script setup>
-  import {NButton} from '@nova/components'
+  import {NButton} from '@nova-org/components'
 </script>
 ```
 
@@ -104,7 +104,7 @@ import {NButton, NIcon} from '@nova/components'
 ```vue [Script]
 
 <script setup>
-  import {NButton} from '@nova/components'
+  import {NButton} from '@nova-org/components'
 </script>
 ```
 
@@ -134,7 +134,7 @@ import {NButton, NIcon} from '@nova/components'
 ```vue [Script]
 
 <script setup>
-  import {NButton} from '@nova/components'
+  import {NButton} from '@nova-org/components'
 </script>
 ```
 
@@ -164,7 +164,7 @@ import {NButton, NIcon} from '@nova/components'
 ```vue [Script]
 
 <script setup>
-  import {NButton} from '@nova/components'
+  import {NButton} from '@nova-org/components'
 </script>
 ```
 
@@ -206,7 +206,7 @@ import {NButton, NIcon} from '@nova/components'
 ```vue [Script]
 
 <script setup>
-  import {NButton} from '@nova/components'
+  import {NButton} from '@nova-org/components'
 </script>
 ```
 

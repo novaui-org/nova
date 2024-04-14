@@ -14,7 +14,7 @@
 
 <!-- #region script -->
 <script setup lang="ts">
-import {NCheckbox, NOptionsGroup} from '@nova/components'
+import {NCheckbox, NOptionsGroup} from '@nova-org/components'
 import {ref} from 'vue'
 
 const modelValue = ref([])
