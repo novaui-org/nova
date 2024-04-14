@@ -26,7 +26,7 @@
     "release:next": "release-it --ci --config ./release-it.json --preRelease=next"
   },
   "dependencies": {
-    "@nova-org/icons": "0.0.1",
+    "@nova-org/icons": "*",
     "@oku-ui/motion-nuxt": "^0.2.1",
     "color2k": "^2.0.3",
     "motion": "^10.16.4",
