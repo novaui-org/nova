@@ -8,9 +8,9 @@
     "version": {
       "allowBranch": [
         "main",
-        "develop",
-        "feature/release-ops"
+        "develop"
       ],
+      "createRelease": "github",
       "conventionalCommits": true,
       "changelog": false,
       "forcePublish": true,
