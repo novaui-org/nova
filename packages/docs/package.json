@@ -1,6 +1,7 @@
 {
   "name": "@nova-org/docs",
   "version": "0.0.1-next.0",
+  "private": true,
   "description": "",
   "scripts": {
     "dev": "vitepress dev",
