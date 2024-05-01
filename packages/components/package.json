@@ -1,6 +1,9 @@
 {
   "name": "@nova-org/components",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.1-next.0",
   "type": "module",
   "files": [
