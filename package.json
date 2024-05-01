@@ -11,7 +11,8 @@
     "release": "npm run release --workspaces && release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
     "release:next": "npm run release:next --workspaces && release-it --ci --config ./release-it.json --preRelease=next",
     "release:lerna": "lerna version --yes",
-    "release:lerna:next": "lerna version prerelease --yes --preid next"
+    "release:lerna:next": "lerna version prerelease --yes --preid next",
+    "publish:lerna": "lerna publish from-package"
   },
   "workspaces": [
     "packages/icons",
