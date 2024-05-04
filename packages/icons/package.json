@@ -24,9 +24,7 @@
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "types": "vue-tsc",
     "preview": "vite preview",
-    "icons:generate": "npx ts-node --esm ./scripts/index.mts icons",
-    "release": "release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
-    "release:next": "release-it --ci --config ./release-it.json --preRelease=next"
+    "icons:generate": "npx ts-node --esm ./scripts/index.mts icons"
   },
   "devDependencies": {
     "@types/node": "^20.11.28",

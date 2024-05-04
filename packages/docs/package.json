@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview",
-    "release": "release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
-    "release:next": "release-it --ci --config ./release-it.json --preRelease=next"
+    "preview": "vitepress preview"
   },
   "author": "",
   "license": "ISC",

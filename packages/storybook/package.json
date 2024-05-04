@@ -8,9 +8,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "release": "release-it --ci --config ./release-it.json --git.tagExclude='*[-]*'",
-    "release:next": "release-it --ci --config ./release-it.json --preRelease=next"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "vue": "^3.3.4"
