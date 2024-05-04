@@ -12,7 +12,6 @@
       ],
       "createRelease": "github",
       "conventionalCommits": true,
-      "changelog": false,
       "forcePublish": true,
       "message": "chore: 🚀 Release %s"
     }
