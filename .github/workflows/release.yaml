@@ -29,7 +29,7 @@ concurrency:
 
 jobs:
   release:
-    name: "Release Nova @next"
+    name: "Release Nova"
     runs-on: ubuntu-latest
 
     steps:
