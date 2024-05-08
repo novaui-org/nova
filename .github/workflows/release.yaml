@@ -29,6 +29,7 @@ concurrency:
 
 jobs:
   release:
+    environment: "npm-release"
     name: "Release Nova"
     runs-on: ubuntu-latest
 
