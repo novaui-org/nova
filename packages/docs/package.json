@@ -1,6 +1,6 @@
 {
   "name": "@nova-org/docs",
-  "version": "0.0.1-next.0",
+  "version": "0.0.1-next.1",
   "private": true,
   "description": "",
   "scripts": {
@@ -15,8 +15,8 @@
     "vitepress": "^1.1.0"
   },
   "dependencies": {
-    "@nova-org/components": "^0.0.1-next.0",
-    "@nova-org/icons": "^0.0.1-next.0",
+    "@nova-org/components": "^0.0.1-next.1",
+    "@nova-org/icons": "^0.0.1-next.1",
     "@oku-ui/motion-nuxt": "^0.2.1",
     "motion": "^10.16.4"
   },
