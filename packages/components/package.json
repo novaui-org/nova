@@ -17,7 +17,8 @@
       "import": "./dist/nova.js",
       "require": "./dist/nova.umd.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/style.css",
+    "./scss/index.variables.scss": "./dist/scss/index.variables.scss"
   },
   "types": "./dist/index.d.ts",
   "scripts": {

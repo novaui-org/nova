@@ -4,12 +4,25 @@ import svgLoader from 'vite-svg-loader'
 import path from 'node:path'
 import dtsPlugin from 'vite-plugin-dts'
 import {visualizer} from 'rollup-plugin-visualizer'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     svgLoader({defaultImport: 'component'}) as PluginOption,
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'src/styles/index.variables.scss',
+          dest: 'scss'
+        },
+        {
+          src: 'src/styles/variables/**',
+          dest: 'scss/variables'
+        }
+      ]
+    }),
     dtsPlugin({insertTypesEntry: true}) as PluginOption,
     visualizer({filename: './generated/stats.html'}) as PluginOption,
   ],
