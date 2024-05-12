@@ -352,7 +352,6 @@ template {
  * Disable tap highlight on touchscreens
  */
 *, *:before, *:after {
-  box-sizing: inherit;
   -webkit-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
 }
