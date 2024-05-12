@@ -5,10 +5,10 @@
 </template>
 
 <script setup lang="ts">
-import {defineAsyncComponent, ref, shallowRef, watch, computed, FunctionalComponent} from 'vue'
-import {NIconProps} from './types.ts'
+import {defineAsyncComponent, ref, shallowRef, watch, computed, type FunctionalComponent} from 'vue'
+import {type NIconProps} from './types'
 import NovaIcons from '@nova-org/icons'
-import {parseColor} from 'src/utils/color-utils.ts'
+import {parseColor} from 'src/utils'
 
 const props = withDefaults(defineProps<NIconProps>(), {size: '16px', color: 'inherit'})
 const cmp = shallowRef<FunctionalComponent | null>(null)

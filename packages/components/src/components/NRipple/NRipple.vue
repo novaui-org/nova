@@ -13,8 +13,8 @@
 
 <script setup lang="ts">
 import {Motion} from 'motion/vue'
-import {NRippleEmits, NRippleProps} from 'src/components/NRipple/types.ts'
-import {computed, CSSProperties} from 'vue'
+import {type NRippleEmits, type NRippleProps} from './types'
+import {computed, type CSSProperties} from 'vue'
 
 const props = withDefaults(defineProps<NRippleProps>(), {
   color: 'currentColor',

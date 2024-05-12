@@ -26,10 +26,10 @@
 </template>
 
 <script setup lang="ts">
-import {NCheckboxEmits, NCheckboxProps} from 'src/components/NCheckbox/types.ts'
+import {type NCheckboxEmits, type NCheckboxProps} from './types'
 import {computed} from 'vue'
-import NCheckboxIcon from 'src/components/NCheckboxIcon/NCheckboxIcon.vue'
-import NOption from 'src/components/NOption/NOption.vue'
+import NCheckboxIcon from '../NCheckboxIcon/NCheckboxIcon.vue'
+import NOption from '../NOption/NOption.vue'
 
 const emit = defineEmits<NCheckboxEmits>()
 const props = withDefaults(defineProps<NCheckboxProps>(), {

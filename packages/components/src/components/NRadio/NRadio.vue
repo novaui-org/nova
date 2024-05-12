@@ -26,8 +26,8 @@
 </template>
 
 <script setup lang="ts">
-import {NRadioEmits, NRadioProps} from 'src/components/NRadio/types.ts'
-import NOption from 'src/components/NOption/NOption.vue'
+import {type NRadioEmits, type NRadioProps} from './types'
+import NOption from '../NOption/NOption.vue'
 import {computed} from 'vue'
 
 defineEmits<NRadioEmits>()

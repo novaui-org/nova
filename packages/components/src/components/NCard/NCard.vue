@@ -27,8 +27,8 @@
 </template>
 
 <script setup lang="ts">
-import {NCardProps} from 'src/components/NCard/types.ts'
-import {NDivider} from 'src/components'
+import {type NCardProps} from './types'
+import NDivider from '../NDivider/NDivider.vue'
 
 withDefaults(defineProps<NCardProps>(), {
   radius: 'lg',

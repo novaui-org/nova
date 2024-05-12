@@ -1,5 +1,5 @@
 import {ref} from 'vue'
-import {getNumericStyleProperty} from 'src/utils/dom-utils.ts'
+import {getNumericStyleProperty} from 'src/utils'
 
 export type RippleType = {
   key: string

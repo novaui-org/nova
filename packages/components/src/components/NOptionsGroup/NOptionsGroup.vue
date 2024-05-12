@@ -27,10 +27,10 @@
 </template>
 
 <script setup lang="ts">
-import {NOptionsGroupProps} from 'src/components/NOptionsGroup/types.ts'
-import NInputMessage from 'src/components/NInputMessage/NInputMessage.vue'
-import NIcon from 'src/components/NIcon/NIcon.vue'
-import NSlideTransition from 'src/components/NSlideTransition/NSlideTransition.vue'
+import {type NOptionsGroupProps} from './types'
+import NInputMessage from '../NInputMessage/NInputMessage.vue'
+import NIcon from '../NIcon/NIcon.vue'
+import NSlideTransition from '../NSlideTransition/NSlideTransition.vue'
 
 withDefaults(defineProps<NOptionsGroupProps>(), {
   errorIcon: 'vuesax/linear/info-circle',

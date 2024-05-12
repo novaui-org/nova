@@ -1,2 +1,2 @@
-export * from 'src/utils/color-utils.ts'
-export * from 'src/utils/dom-utils.ts'
+export * from './color-utils'
+export * from './dom-utils'

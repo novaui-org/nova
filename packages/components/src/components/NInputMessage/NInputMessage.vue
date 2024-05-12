@@ -11,9 +11,9 @@
 </template>
 
 <script setup lang="ts">
-import {NInputMessageProps} from 'src/components/NInputMessage/types.ts'
+import {type NInputMessageProps} from './types'
 import {computed} from 'vue'
-import NSlideTransition from 'src/components/NSlideTransition/NSlideTransition.vue'
+import NSlideTransition from '../NSlideTransition/NSlideTransition.vue'
 
 const props = withDefaults(defineProps<NInputMessageProps>(), {
   variant: 'default',

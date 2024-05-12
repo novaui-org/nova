@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import {NDividerProps} from 'src/components/NDivider/types.ts'
+import {type NDividerProps} from './types'
 
 defineProps<NDividerProps>()
 </script>

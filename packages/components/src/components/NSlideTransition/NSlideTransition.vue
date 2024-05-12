@@ -13,9 +13,9 @@
 
 <script setup lang="ts">
 import {Presence, Motion} from '@oku-ui/motion'
-import {NSlideTransitionProps} from 'src/components/NSlideTransition/types.ts'
+import {type NSlideTransitionProps} from './types'
 import {computed} from 'vue'
-import {VariantDefinition} from '@motionone/dom/types/state/types'
+import {type VariantDefinition} from '@motionone/dom'
 
 const props = withDefaults(defineProps<NSlideTransitionProps>(), {
   variant: 'vertical',

@@ -1,4 +1,4 @@
-import {RippleType} from 'src/components/NRipple/use-ripple.ts'
+import {type RippleType} from './use-ripple'
 
 export interface NRippleProps {
   color?: string
