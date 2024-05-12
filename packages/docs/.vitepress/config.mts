@@ -33,9 +33,12 @@ export default defineConfig({
         timeStyle: 'medium',
       },
     },
-    search:{
-      provider: 'local'
-    }
+    search: {
+      provider: 'local',
+    },
+    outline: {
+      level: 'deep',
+    },
   },
   /* https://github.com/vitejs/vite/issues/819 */
   /* https://vitepress.dev/reference/site-config#vite */
@@ -44,6 +47,18 @@ export default defineConfig({
   //     link: ['nova'],
   //   },
   // },
+  /* https://stackoverflow.com/questions/60009780/import-global-sass-variables-into-vuepress-components */
+  /* https://stackoverflow.com/questions/28283652/importing-sass-through-npm */
+  /* https://github.com/vitejs/vite/issues/382 */
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@nova-org/components/scss/index.variables.scss";',
+        },
+      },
+    },
+  },
 })
 
 function loadDirectoryEntries(title, directory) {
