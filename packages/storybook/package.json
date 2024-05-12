@@ -1,7 +1,7 @@
 {
   "name": "@nova-org/storybook",
   "private": true,
-  "version": "0.0.1-next.1",
+  "version": "0.0.1-next.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
