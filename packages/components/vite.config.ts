@@ -1,12 +1,18 @@
-import {defineConfig} from 'vite'
+import {defineConfig, type PluginOption} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import svgLoader from 'vite-svg-loader'
 import path from 'node:path'
-import dts from 'vite-plugin-dts'
+import dtsPlugin from 'vite-plugin-dts'
+import {visualizer} from 'rollup-plugin-visualizer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), svgLoader({defaultImport: 'component'}), dts()],
+  plugins: [
+    vue(),
+    svgLoader({defaultImport: 'component'}) as PluginOption,
+    dtsPlugin({insertTypesEntry: true}) as PluginOption,
+    visualizer({filename: './generated/stats.html'}) as PluginOption,
+  ],
   resolve: {
     alias: {
       'src': path.resolve(__dirname, './src'),
