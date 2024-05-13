@@ -18,6 +18,7 @@ import {NCard} from '@nova-org/components'
     display: flex;
     flex-wrap: wrap;
     gap: $n-space-12;
+    align-items: center;
   }
 }
 </style>
