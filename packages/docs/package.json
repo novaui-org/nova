@@ -2,13 +2,19 @@
   "name": "@nova-org/docs",
   "version": "0.0.1-next.1",
   "private": true,
+  "author": "Jozef Majzel <jozefmajzel1@gmail.com>",
+  "homepage": "https://novaui-org.github.io/nova/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novaui-org/nova.git",
+    "directory": "packages/docs"
+  },
   "description": "",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.75.0",

@@ -2,6 +2,12 @@
   "name": "@nova-org/nova",
   "version": "0.0.1",
   "private": true,
+  "author": "Jozef Majzel <jozefmajzel1@gmail.com>",
+  "homepage": "https://novaui-org.github.io/nova/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novaui-org/nova.git"
+  },
   "scripts": {
     "dev:icons": "lerna run build --scope=\"@nova-org/icons\"",
     "dev:components": "lerna watch --scope=\"@nova-org/components\"  -- lerna run build --scope=\"@nova-org/components\"",

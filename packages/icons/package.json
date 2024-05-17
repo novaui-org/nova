@@ -1,6 +1,13 @@
 {
   "name": "@nova-org/icons",
   "private": false,
+  "author": "Jozef Majzel <jozefmajzel1@gmail.com>",
+  "homepage": "https://novaui-org.github.io/nova/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novaui-org/nova.git",
+    "directory": "packages/icons"
+  },
   "publishConfig": {
     "access": "public"
   },
