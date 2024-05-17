@@ -9,13 +9,13 @@
     "url": "git+https://github.com/novaui-org/nova.git",
     "directory": "packages/docs"
   },
+  "license": "MIT",
   "description": "",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
-  "license": "ISC",
   "devDependencies": {
     "sass": "^1.75.0",
     "vitepress": "^1.1.0"

@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/novaui-org/nova.git"
   },
+  "license": "MIT",
   "scripts": {
     "dev:icons": "lerna run build --scope=\"@nova-org/icons\"",
     "dev:components": "lerna watch --scope=\"@nova-org/components\"  -- lerna run build --scope=\"@nova-org/components\"",

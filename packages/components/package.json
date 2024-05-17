@@ -8,6 +8,7 @@
     "url": "git+https://github.com/novaui-org/nova.git",
     "directory": "packages/components"
   },
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
