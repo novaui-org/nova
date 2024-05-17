@@ -1,15 +1,16 @@
-<p style="text-align: center">
+<p align="center">
   <a href="https://novaui-org.github.io/nova/">
-    <span style="font-size: 100px; line-height: 1">☄️</span>
-    <h1 style="text-align: center; margin: 0">Nova</h1>
+    <img alt="Nova logo" src="https://avatars.githubusercontent.com/u/166323721" style="display: block" height="100px"/>
+    <h1 align="center" style="margin: 0">Nova</h1>
   </a>
 </p>
 <br/>
-<p style="text-align: center">
+<p align="center">
   <a href="https://www.npmjs.com/package/@nova-org/icons">
     <img src="https://img.shields.io/npm/dm/@nova-org/icons.svg?style=flat-round" alt="npm downloads">
   </a>
 </p>
+
 
 ## Installation
 
@@ -27,4 +28,4 @@ tag `@next` in npm to use the latest changes before the next production release.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the terms of the [MIT license](https://github.com/novaui-org/nova/blob/main/LICENSE).

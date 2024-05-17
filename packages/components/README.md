@@ -1,11 +1,11 @@
-<p style="text-align: center">
+<p align="center">
   <a href="https://novaui-org.github.io/nova/">
-    <span style="font-size: 100px; line-height: 1">☄️</span>
-    <h1 style="text-align: center; margin: 0">Nova</h1>
+    <img alt="Nova logo" src="https://avatars.githubusercontent.com/u/166323721" style="display: block" height="100px"/>
+    <h1 align="center" style="margin: 0">Nova</h1>
   </a>
 </p>
 <br/>
-<p style="text-align: center">
+<p align="center">
   <a href="https://www.npmjs.com/package/@nova-org/components">
     <img src="https://img.shields.io/npm/dm/@nova-org/components.svg?style=flat-round" alt="npm downloads">
   </a>
