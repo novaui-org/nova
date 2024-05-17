@@ -10,7 +10,6 @@
         "main",
         "develop"
       ],
-      "createRelease": "github",
       "conventionalCommits": true,
       "forcePublish": true,
       "message": "chore: 🚀 Release %s"

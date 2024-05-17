@@ -8,7 +8,7 @@
     "dev:docs": "lerna run dev --scope=\"@nova-org/docs\"",
     "dev": "npm-run-all --parallel dev:*",
     "build": "lerna run build",
-    "release": "lerna version --yes",
+    "release": "lerna version --yes --create-release github",
     "release:next": "lerna version prerelease --yes --preid next",
     "publish": "lerna publish from-package --yes"
   },
