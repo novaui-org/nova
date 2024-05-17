@@ -27,4 +27,4 @@ tag `@next` in npm to use the latest changes before the next production release.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the terms of the [MIT license](https://github.com/novaui-org/nova/blob/main/LICENSE).
