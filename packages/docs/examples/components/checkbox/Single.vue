@@ -1,16 +1,12 @@
 <!-- #region template -->
 <template>
-  <div class="n-mb-32 n-mt-16">
-    <div style="display: flex; gap: 16px;">
-      <n-options-group label="Do you enjoy travelling">
-        <n-checkbox v-model="modelValue" value="solo" label="I enjoy it with every part of my body"/>
-      </n-options-group>
-    </div>
+  <n-options-group label="Do you enjoy travelling">
+    <n-checkbox v-model="modelValue" value="solo" label="I enjoy it with every part of my body"/>
+  </n-options-group>
 
-    <div class="n-mt-8">
-      <n-text font-size="paragraph" weight="medium" v-text="'Model value:'"/>
-      {{ modelValue }}
-    </div>
+  <div>
+    <n-text font-size="paragraph" weight="medium" v-text="'Model value:'"/>
+    {{ modelValue }}
   </div>
 </template>
 <!-- #endregion template -->
