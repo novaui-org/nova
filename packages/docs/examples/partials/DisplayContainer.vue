@@ -15,7 +15,7 @@
 <script setup lang="ts">
 import {NCard} from '@nova-org/components'
 
-defineProps<{ vertical: boolean }>()
+defineProps<{ vertical?: boolean }>()
 </script>
 
 <style scoped lang="scss">
