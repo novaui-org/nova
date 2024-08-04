@@ -76,26 +76,25 @@ function getEnterKeyframes(height: string, initialStyle: initialStyle) {
   ]
 }
 
-export function useSlideTransition(props: NSlideTransitionProps) {
-  const animation = ref<Animation | null>(null)
-
-  function animateTransition(
-    element: HTMLElement,
-    initialStyle: initialStyle,
-    done: () => void,
-    keyframes: Keyframe[] | PropertyIndexedKeyframes | null,
-    options?: number | KeyframeAnimationOptions,
-  ) {
-    animation.value = element.animate(keyframes, options)
-    /* Set height to 'auto' to restore it after animation */
-    element.style.height = initialStyle.height
-    animation.value.onfinish = () => {
-      element.style.overflow = initialStyle.overflow
-      animation.value = null
-      done()
-    }
+function animateTransition(
+  element: HTMLElement,
+  initialStyle: initialStyle,
+  done: () => void,
+  keyframes: Keyframe[] | PropertyIndexedKeyframes | null,
+  options?: number | KeyframeAnimationOptions,
+) {
+  const animation = element.animate(keyframes, options)
+  /* Set height to 'auto' to restore it after animation */
+  element.style.height = initialStyle.height
+  animation.onfinish = () => {
+    element.style.overflow = initialStyle.overflow
+    done()
   }
 
+  return animation
+}
+
+export function useSlideTransition(props: NSlideTransitionProps) {
   function enterTransition(element: Element, doneCallback: () => void) {
     const initialStyle = getElementStyle(<HTMLElement>element)
     const height = prepareElement(<HTMLElement>element, initialStyle)
