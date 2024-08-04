@@ -1,42 +1,23 @@
 <template>
-  <presence>
-    <motion
-      v-show="visible"
-      :exit="exit"
-      :transition="{ duration: 0.3 }"
-      class="n-slide-transition"
-    >
-      <slot/>
-    </motion>
-  </presence>
+  <transition
+    :css="false"
+    :persisted="false"
+    @enter="enterTransition"
+    @leave="leaveTransition"
+  >
+    <slot/>
+  </transition>
 </template>
 
 <script setup lang="ts">
-import {Presence, Motion} from '@oku-ui/motion'
 import {type NSlideTransitionProps} from './types'
-import {computed} from 'vue'
-import {type VariantDefinition} from '@motionone/dom'
+import {useSlideTransition} from 'src/components/NSlideTransition/use-slide-transition'
 
 const props = withDefaults(defineProps<NSlideTransitionProps>(), {
-  variant: 'vertical',
+  duration: 300,
 })
-
-const exit = computed<VariantDefinition>(() => {
-  switch (props.variant) {
-    case 'vertical':
-      return {height: 0, marginTop: 0, marginBottom: 0, paddingTop: 0, paddingBottom: 0, opacity: 0}
-    case 'horizontal':
-      return {width: 0, marginLeft: 0, marginRight: 0, paddingLeft: 0, paddingRight: 0, opacity: 0}
-    case 'both':
-      return {scale: 0, opacity: 0}
-  }
-})
+const {enterTransition, leaveTransition} = useSlideTransition(props)
 </script>
 
 <style scoped lang="scss">
-.n-slide-transition {
-  overflow: hidden;
-  line-height: 0;
-  transform-origin: center;
-}
 </style>
