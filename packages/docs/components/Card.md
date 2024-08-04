@@ -1,5 +1,4 @@
 <script setup>
-import {NCard, NButton, NText} from '@nova-org/components'
 import DisplayContainer from '../examples/partials/DisplayContainer.vue'
 import BasicUsage from '../examples/components/card/BasicUsage.vue'
 import Variant from '../examples/components/card/Variant.vue'
