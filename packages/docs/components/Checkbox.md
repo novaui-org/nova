@@ -27,7 +27,7 @@ import {NCheckbox, NOptionsGroup} from '@nova-org/components'
 
 When using multiple checkboxes, your **v-model** will become array of selected options.
 
-<display-container>
+<display-container vertical>
     <basic-usage/>
 </display-container>
 

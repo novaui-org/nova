@@ -7,12 +7,17 @@
     <n-checkbox v-model="modelValue" value="volunteering" label="Volunteer Abroad"/>
     <n-checkbox v-model="modelValue" value="trekking" label="Himalayan Trek"/>
   </n-options-group>
+
+  <div>
+    <n-text font-size="paragraph" weight="medium" v-text="'Model value:'"/>
+    {{ modelValue }}
+  </div>
 </template>
 <!-- #endregion template -->
 
 <!-- #region script -->
 <script setup lang="ts">
-import {NCheckbox, NOptionsGroup} from '@nova-org/components'
+import {NCheckbox, NOptionsGroup, NText} from '@nova-org/components'
 import {ref} from 'vue'
 
 const modelValue = ref([])
