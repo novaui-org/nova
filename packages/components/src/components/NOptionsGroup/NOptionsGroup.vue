@@ -21,8 +21,20 @@
       <slot/>
     </div>
 
-    <n-input-message class="n-options-group__message" variant="negative" :visible="!!error" :message="errorMessage"/>
-    <n-input-message class="n-options-group__message" :visible="!error && !!hint" :message="hint"/>
+    <n-slide-transition>
+      <n-input-message
+        v-if="error && errorMessage"
+        class="n-options-group__message"
+        variant="negative"
+        :message="errorMessage"
+      />
+    </n-slide-transition>
+
+    <n-slide-transition>
+      <n-input-message v-if="!error && hint" class="n-options-group__message" :message="hint"/>
+    </n-slide-transition>
+
+
   </div>
 </template>
 

@@ -1,23 +1,22 @@
 <template>
-  <n-slide-transition>
-    <div
-      v-if="props.visible && !!props.message"
-      class="n-input-message"
-      :class="{
+  <div
+    class="n-input-message"
+    :class="{
       [`n-input-message--variant-${variant}`]: true
     }"
-      v-text="message"
-    />
-  </n-slide-transition>
+  >
+    <slot v-if="$slots.default"/>
+    <template v-else>
+      {{ message }}
+    </template>
+  </div>
 </template>
 
 <script setup lang="ts">
 import {type NInputMessageProps} from './types'
-import NSlideTransition from '../NSlideTransition/NSlideTransition.vue'
 
-const props = withDefaults(defineProps<NInputMessageProps>(), {
+withDefaults(defineProps<NInputMessageProps>(), {
   variant: 'default',
-  visible: true,
 })
 </script>
 
