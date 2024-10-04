@@ -3,7 +3,7 @@ export type NOptionType = 'checkbox' | 'radio'
 
 export interface NOptionProps {
   checked: boolean
-  value: string
+  value?: string
   label?: string
   name?: string
   size?: NOptionSize

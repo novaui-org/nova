@@ -2,7 +2,7 @@ export type NCheckboxSize = 'sm' | 'md' | 'lg'
 
 export interface NCheckboxProps {
   modelValue: string[] | boolean
-  value: string
+  value?: string
   label?: string
   name?: string
   size?: NCheckboxSize
