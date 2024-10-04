@@ -10,14 +10,14 @@
       <span class="n-options-group__label" v-text="label"/>
 
       <span>
-        <n-slide-transition-group-vertical>
+        <n-slide-transition-group-horizontal>
           <n-icon
             v-if="error || success"
             :key="error ? 'error' : 'success'"
             :name="error ? errorIcon : successIcon"
             :color="error ? 'n-danger' : 'n-success'"
           />
-        </n-slide-transition-group-vertical>
+        </n-slide-transition-group-horizontal>
       </span>
     </div>
 
@@ -42,7 +42,7 @@ import {type NOptionsGroupProps} from './types'
 import NInputMessage from '../NInputMessage/NInputMessage.vue'
 import NIcon from '../NIcon/NIcon.vue'
 import NSlideTransitionGroup from 'src/components/NSlideTransition/NSlideTransitionGroup.vue'
-import NSlideTransitionGroupVertical from 'src/components/NSlideTransitionVertical/NSlideTransitionGroupVertical.vue'
+import NSlideTransitionGroupHorizontal from 'src/components/NSlideTransitionHorizontal/NSlideTransitionGroupHorizontal.vue'
 
 withDefaults(defineProps<NOptionsGroupProps>(), {
   errorIcon: 'vuesax/linear/info-circle',

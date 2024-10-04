@@ -80,7 +80,7 @@ function animateTransition(
   return animation
 }
 
-export function useSlideTransitionVertical(props: NSlideTransitionProps) {
+export function useSlideTransitionHorizontal(props: NSlideTransitionProps) {
   function enterTransition(element: Element, doneCallback: () => void) {
     const initialStyle = getElementStyle(<HTMLElement>element)
 
