@@ -17,6 +17,7 @@ export default defineConfig({
     sidebar: [
       loadDirectoryEntries('Guide', 'guide'),
       loadDirectoryEntries('Components', 'components'),
+      loadDirectoryEntries('Transitions', 'transitions'),
     ],
 
     socialLinks: [
@@ -61,12 +62,22 @@ export default defineConfig({
   },
 })
 
+function convertToSpacedString(input: string): string {
+  /* Add space between lowercase and uppercase letters */
+  const spacedString = input.replace(/([a-z])([A-Z])/g, '$1 $2');
+
+  /* Convert the string to lowercase and then capitalize the first word */
+  return spacedString.charAt(0).toUpperCase() + spacedString.slice(1).toLowerCase();
+}
+
+// TODO: Add loading recursively
+//  - as well as support for index.md (case insensitive) (@see https://vitepress.dev/guide/markdown#internal-links)
 function loadDirectoryEntries(title, directory) {
   return {
     text: title,
     items: readdirSync(path.join(__dirname, `../${directory}`)).map(fileName => {
       fileName = fileName.split('.')[0]
-      return {text: fileName, link: `/${directory}/${fileName}`}
+      return {text: convertToSpacedString(fileName), link: `/${directory}/${fileName}`}
     }).sort(compareStrings),
   }
 }
