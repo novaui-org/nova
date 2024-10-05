@@ -25,6 +25,15 @@ export * from './NOption/types'
 export {default as NSlideTransition} from './NSlideTransition/NSlideTransition.vue'
 export * from './NSlideTransition/types'
 
+export {default as NSlideTransitionGroup} from './NSlideTransition/NSlideTransitionGroup.vue'
+export * from './NSlideTransition/types'
+
+export {default as NSlideTransitionHorizontal} from 'src/components/NSlideTransitionHorizontal/NSlideTransitionHorizontal.vue'
+export * from './NSlideTransition/types'
+
+export {default as NSlideTransitionGroupHorizontal} from 'src/components/NSlideTransitionHorizontal/NSlideTransitionGroupHorizontal.vue'
+export * from './NSlideTransition/types'
+
 export {default as NInputMessage} from './NInputMessage/NInputMessage.vue'
 export * from './NInputMessage/types'
 

@@ -9,20 +9,31 @@
     <div class="n-options-group__label-container">
       <span class="n-options-group__label" v-text="label"/>
 
-      <n-slide-transition :visible="error || success" variant="both">
-        <n-icon
-          :name="error ? errorIcon : successIcon"
-          :color="error ? 'n-danger' : 'n-success'"
-        />
-      </n-slide-transition>
+      <span>
+        <n-slide-transition-group-horizontal>
+          <n-icon
+            v-if="error || success"
+            :key="error ? 'error' : 'success'"
+            :name="error ? errorIcon : successIcon"
+            :color="error ? 'n-danger' : 'n-success'"
+          />
+        </n-slide-transition-group-horizontal>
+      </span>
     </div>
 
     <div class="n-options-group__content">
       <slot/>
     </div>
 
-    <n-input-message class="n-options-group__message" variant="negative" :visible="!!error" :message="errorMessage"/>
-    <n-input-message class="n-options-group__message" :visible="!error && !!hint" :message="hint"/>
+    <n-slide-transition-group>
+      <n-input-message
+        v-if="error && errorMessage"
+        class="n-options-group__message"
+        variant="negative"
+        :message="errorMessage"
+      />
+      <n-input-message v-if="!error && hint" class="n-options-group__message" :message="hint"/>
+    </n-slide-transition-group>
   </div>
 </template>
 
@@ -30,7 +41,8 @@
 import {type NOptionsGroupProps} from './types'
 import NInputMessage from '../NInputMessage/NInputMessage.vue'
 import NIcon from '../NIcon/NIcon.vue'
-import NSlideTransition from '../NSlideTransition/NSlideTransition.vue'
+import NSlideTransitionGroup from 'src/components/NSlideTransition/NSlideTransitionGroup.vue'
+import NSlideTransitionGroupHorizontal from 'src/components/NSlideTransitionHorizontal/NSlideTransitionGroupHorizontal.vue'
 
 withDefaults(defineProps<NOptionsGroupProps>(), {
   errorIcon: 'vuesax/linear/info-circle',

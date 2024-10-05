@@ -2,13 +2,20 @@
   "name": "@nova-org/nova",
   "version": "0.0.1",
   "private": true,
+  "author": "Jozef Majzel <jozefmajzel1@gmail.com>",
+  "homepage": "https://novaui-org.github.io/nova/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novaui-org/nova.git"
+  },
+  "license": "MIT",
   "scripts": {
     "dev:icons": "lerna run build --scope=\"@nova-org/icons\"",
     "dev:components": "lerna watch --scope=\"@nova-org/components\"  -- lerna run build --scope=\"@nova-org/components\"",
     "dev:docs": "lerna run dev --scope=\"@nova-org/docs\"",
     "dev": "npm-run-all --parallel dev:*",
     "build": "lerna run build",
-    "release": "lerna version --yes",
+    "release": "lerna version --yes --create-release github",
     "release:next": "lerna version prerelease --yes --preid next",
     "publish": "lerna publish from-package --yes"
   },
@@ -19,7 +26,7 @@
     "packages/docs"
   ],
   "devDependencies": {
-    "lerna": "^8.1.2",
+    "lerna": "^8.1.8",
     "npm-run-all": "^4.1.5"
   }
 }

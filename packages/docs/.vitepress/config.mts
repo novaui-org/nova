@@ -17,6 +17,7 @@ export default defineConfig({
     sidebar: [
       loadDirectoryEntries('Guide', 'guide'),
       loadDirectoryEntries('Components', 'components'),
+      loadDirectoryEntries('Transitions', 'transitions'),
     ],
 
     socialLinks: [
@@ -33,9 +34,12 @@ export default defineConfig({
         timeStyle: 'medium',
       },
     },
-    search:{
-      provider: 'local'
-    }
+    search: {
+      provider: 'local',
+    },
+    outline: {
+      level: 'deep',
+    },
   },
   /* https://github.com/vitejs/vite/issues/819 */
   /* https://vitepress.dev/reference/site-config#vite */
@@ -44,14 +48,36 @@ export default defineConfig({
   //     link: ['nova'],
   //   },
   // },
+  /* https://stackoverflow.com/questions/60009780/import-global-sass-variables-into-vuepress-components */
+  /* https://stackoverflow.com/questions/28283652/importing-sass-through-npm */
+  /* https://github.com/vitejs/vite/issues/382 */
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@nova-org/components/scss/index.variables.scss";',
+        },
+      },
+    },
+  },
 })
 
+function convertToSpacedString(input: string): string {
+  /* Add space between lowercase and uppercase letters */
+  const spacedString = input.replace(/([a-z])([A-Z])/g, '$1 $2');
+
+  /* Convert the string to lowercase and then capitalize the first word */
+  return spacedString.charAt(0).toUpperCase() + spacedString.slice(1).toLowerCase();
+}
+
+// TODO: Add loading recursively
+//  - as well as support for index.md (case insensitive) (@see https://vitepress.dev/guide/markdown#internal-links)
 function loadDirectoryEntries(title, directory) {
   return {
     text: title,
     items: readdirSync(path.join(__dirname, `../${directory}`)).map(fileName => {
       fileName = fileName.split('.')[0]
-      return {text: fileName, link: `/${directory}/${fileName}`}
+      return {text: convertToSpacedString(fileName), link: `/${directory}/${fileName}`}
     }).sort(compareStrings),
   }
 }

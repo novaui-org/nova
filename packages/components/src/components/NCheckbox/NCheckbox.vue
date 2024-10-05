@@ -37,11 +37,11 @@ const props = withDefaults(defineProps<NCheckboxProps>(), {
   color: 'n-primary',
 })
 
-const checked = computed<boolean>(() => Array.isArray(props.modelValue) ? props.modelValue.includes(props.value) : props.modelValue)
+const checked = computed<boolean>(() => Array.isArray(props.modelValue) ? props.modelValue.includes(props.value!) : props.modelValue)
 
 function onClick() {
   if (Array.isArray(props.modelValue)) {
-    emit('update:modelValue', checked.value ? props.modelValue.filter(v => v !== props.value) : [...props.modelValue, props.value])
+    emit('update:modelValue', checked.value ? props.modelValue.filter(v => v !== props.value!) : [...props.modelValue, props.value!])
   } else {
     emit('update:modelValue', !checked.value)
   }

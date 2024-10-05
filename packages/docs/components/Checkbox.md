@@ -1,5 +1,3 @@
-# Checkbox
-
 <script setup>
 import WithDescription from '../examples/components/checkbox/WithDescription.vue'
 import BasicUsage from '../examples/components/checkbox/BasicUsage.vue'
@@ -9,11 +7,29 @@ import WithValidation from '../examples/components/checkbox/WithValidation.vue'
 import WithDescriptionAndValidation from '../examples/components/checkbox/WithDescriptionAndValidation.vue'
 import WithHint from '../examples/components/checkbox/WithHint.vue'
 import Single from '../examples/components/checkbox/Single.vue'
+import DisplayContainer from '../examples/partials/DisplayContainer.vue'
 </script>
+
+# Checkbox
+
+Checkboxes enable users to choose multiple items from a list or mark a single item as selected.
+
+## Import
+
+Importing **NOptionsGroup** is not mandatory, but it provides a simple way of displaying **label**, **errors**,
+**success state** and others.
+
+```ts
+import {NCheckbox, NOptionsGroup} from '@nova-org/components'
+```
 
 ## Usage
 
-<basic-usage/>
+When using multiple checkboxes, your **v-model** will become array of selected options.
+
+<display-container vertical>
+    <basic-usage/>
+</display-container>
 
 ::: details Code
 ::: code-group
@@ -23,7 +39,11 @@ import Single from '../examples/components/checkbox/Single.vue'
 
 ## Single
 
-<single/>
+When using single checkbox, boolean value for **v-model** can be used.
+
+<display-container vertical>
+    <single/>
+</display-container>
 
 ::: details Code
 ::: code-group
@@ -33,7 +53,11 @@ import Single from '../examples/components/checkbox/Single.vue'
 
 ### With description
 
-<with-description/>
+Description is a simple way to provide additional information about options.
+
+<display-container>
+    <with-description/>
+</display-container>
 
 ::: details Code
 ::: code-group
@@ -41,9 +65,13 @@ import Single from '../examples/components/checkbox/Single.vue'
 <<< @/examples/components/checkbox/WithDescription.vue#script [Script]
 :::
 
-### Disabled checkbox group
+### Disabled options group
 
-<disabled-group/>
+Using **disabled** on **NOptionsGroup** disables all options inside.
+
+<display-container>
+    <disabled-group/>
+</display-container>
 
 ::: details Code
 ::: code-group
@@ -53,7 +81,11 @@ import Single from '../examples/components/checkbox/Single.vue'
 
 ### Disabled options
 
-<disabled-option/>
+Using **disabled** on **NCheckbox** disables only a concrete option.
+
+<display-container>
+    <disabled-option/>
+</display-container>
 
 ::: details Code
 ::: code-group
@@ -63,7 +95,9 @@ import Single from '../examples/components/checkbox/Single.vue'
 
 ### With validation
 
-<with-validation/>
+<display-container>
+    <with-validation/>
+</display-container>
 
 ::: details Code
 ::: code-group
@@ -73,7 +107,9 @@ import Single from '../examples/components/checkbox/Single.vue'
 
 ### With description and validation
 
-<with-description-and-validation/>
+<display-container>
+    <with-description-and-validation/>
+</display-container>
 
 ::: details Code
 ::: code-group
@@ -83,7 +119,9 @@ import Single from '../examples/components/checkbox/Single.vue'
 
 ### With hint
 
-<with-hint/>
+<display-container>
+    <with-hint/>
+</display-container>
 
 ::: details Code
 ::: code-group

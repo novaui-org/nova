@@ -18,6 +18,7 @@ defineProps<NDividerProps>()
 
   padding: 0;
   margin: 0;
+  border: 0;
   background-color: $n-divider;
 
   &.n-divider--vertical {

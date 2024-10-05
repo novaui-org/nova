@@ -74,6 +74,7 @@ function handleOnClick(event: MouseEvent) {
 
   border: 0 solid transparent;
   vertical-align: middle;
+  cursor: pointer;
 
   display: inline-flex;
   align-items: center;

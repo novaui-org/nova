@@ -347,3 +347,11 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * Disable tap highlight on touchscreens
+ */
+*, *:before, *:after {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+}
