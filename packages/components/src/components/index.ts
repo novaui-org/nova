@@ -1,32 +1,41 @@
-export {default as NButton} from 'src/components/NButton/NButton.vue'
-export * from 'src/components/NButton/types.ts'
+export {default as NButton} from './NButton/NButton.vue'
+export * from './NButton/types'
 
-export {default as NIcon} from 'src/components/NIcon/NIcon.vue'
-export * from 'src/components/NIcon/types.ts'
+export {default as NIcon} from './NIcon/NIcon.vue'
+export * from './NIcon/types'
 
-export {default as NText} from 'src/components/NText/NText.vue'
-export * from 'src/components/NText/types.ts'
+export {default as NText} from './NText/NText.vue'
+export * from './NText/types'
 
-export {default as NDivider} from 'src/components/NDivider/NDivider.vue'
-export * from 'src/components/NDivider/types.ts'
+export {default as NDivider} from './NDivider/NDivider.vue'
+export * from './NDivider/types'
 
-export {default as NCard} from 'src/components/NCard/NCard.vue'
-export * from 'src/components/NCard/types.ts'
+export {default as NCard} from './NCard/NCard.vue'
+export * from './NCard/types'
 
-export {default as NRadio} from 'src/components/NRadio/NRadio.vue'
-export * from 'src/components/NRadio/types.ts'
+export {default as NRadio} from './NRadio/NRadio.vue'
+export * from './NRadio/types'
 
-export {default as NOptionsGroup} from 'src/components/NOptionsGroup/NOptionsGroup.vue'
-export * from 'src/components/NOptionsGroup/types.ts'
+export {default as NOptionsGroup} from './NOptionsGroup/NOptionsGroup.vue'
+export * from './NOptionsGroup/types'
 
-export {default as NOption} from 'src/components/NOption/NOption.vue'
-export * from 'src/components/NOption/types.ts'
+export {default as NOption} from './NOption/NOption.vue'
+export * from './NOption/types'
 
-export {default as NSlideTransition} from 'src/components/NSlideTransition/NSlideTransition.vue'
-export * from 'src/components/NSlideTransition/types.ts'
+export {default as NSlideTransition} from './NSlideTransition/NSlideTransition.vue'
+export * from './NSlideTransition/types'
 
-export {default as NInputMessage} from 'src/components/NInputMessage/NInputMessage.vue'
-export * from 'src/components/NInputMessage/types.ts'
+export {default as NSlideTransitionGroup} from './NSlideTransition/NSlideTransitionGroup.vue'
+export * from './NSlideTransition/types'
 
-export {default as NCheckbox} from 'src/components/NCheckbox/NCheckbox.vue'
-export * from 'src/components/NCheckbox/types.ts'
+export {default as NSlideTransitionHorizontal} from 'src/components/NSlideTransitionHorizontal/NSlideTransitionHorizontal.vue'
+export * from './NSlideTransition/types'
+
+export {default as NSlideTransitionGroupHorizontal} from 'src/components/NSlideTransitionHorizontal/NSlideTransitionGroupHorizontal.vue'
+export * from './NSlideTransition/types'
+
+export {default as NInputMessage} from './NInputMessage/NInputMessage.vue'
+export * from './NInputMessage/types'
+
+export {default as NCheckbox} from './NCheckbox/NCheckbox.vue'
+export * from './NCheckbox/types'

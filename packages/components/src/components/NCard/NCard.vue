@@ -27,8 +27,8 @@
 </template>
 
 <script setup lang="ts">
-import {NCardProps} from 'src/components/NCard/types.ts'
-import {NDivider} from 'src/components'
+import {type NCardProps} from './types'
+import NDivider from '../NDivider/NDivider.vue'
 
 withDefaults(defineProps<NCardProps>(), {
   radius: 'lg',
@@ -89,7 +89,7 @@ withDefaults(defineProps<NCardProps>(), {
   }
 
   &.n-card--variant-flat {
-    transition: box-shadow ease-in-out 200ms;
+    transition: transform ease-in-out 200ms, box-shadow ease-in-out 200ms;
 
     &.n-card--hoverable:hover {
       box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .05)

@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /guide/Installation
+      link: /guide/Installation/Index
     - theme: alt
       text: Github
       link: https://github.com/xmajzel/nova
@@ -31,4 +31,3 @@ features:
     details: Documentation is built with developer in main. Every developer deserves great documentation.
     icon: 📑
 ---
-

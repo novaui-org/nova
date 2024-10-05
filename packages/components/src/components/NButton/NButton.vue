@@ -23,13 +23,13 @@
 </template>
 
 <script setup lang="ts">
-import {findMoreContrastiveColor, parseColor} from 'src/utils/color-utils.ts'
-import {computed, CSSProperties} from 'vue'
-import {NButtonEmits, NButtonProps} from 'src/components/NButton/types.ts'
-import NText from 'src/components/NText/NText.vue'
-import NIcon from 'src/components/NIcon/NIcon.vue'
-import {useRipple} from 'src/components/NRipple/use-ripple.ts'
-import NRipple from 'src/components/NRipple/NRipple.vue'
+import {findMoreContrastiveColor, parseColor} from 'src/utils'
+import {computed, type CSSProperties} from 'vue'
+import {type NButtonEmits, type NButtonProps} from './types'
+import NText from '../NText/NText.vue'
+import NIcon from '../NIcon/NIcon.vue'
+import {useRipple} from '../NRipple/use-ripple'
+import NRipple from '../NRipple/NRipple.vue'
 import {transparentize} from 'color2k'
 
 const props = withDefaults(defineProps<NButtonProps>(), {
@@ -74,6 +74,7 @@ function handleOnClick(event: MouseEvent) {
 
   border: 0 solid transparent;
   vertical-align: middle;
+  cursor: pointer;
 
   display: inline-flex;
   align-items: center;

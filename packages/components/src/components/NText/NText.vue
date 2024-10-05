@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 import {computed} from 'vue'
-import {NTextProps} from 'src/components/NText/types.ts'
+import {type NTextProps} from './types'
 
 const props = withDefaults(
   defineProps<NTextProps>(),

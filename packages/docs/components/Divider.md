@@ -1,26 +1,27 @@
+<script setup>
+import BasicUsage from '../examples/components/divider/BasicUsage.vue'
+import DisplayContainer from '../examples/partials/DisplayContainer.vue'
+</script>
+
 # Divider
 
-<script setup>
-import {NDivider, NText, NCard} from '@nova/components'
-</script>
+The NDivider component is used to separate sections of content, including text and other components. It creates a
+colored line that spans the width or height of its parent container, and can be oriented horizontally or vertically.
+
+## Import
+
+```ts
+import {NDivider} from '@nova-org/components'
+```
 
 ## Usage
 
-### Variant
+<display-container>
+    <basic-usage/>
+</display-container>
 
-<n-card variant="flat" class="n-mb-32 n-mt-16" style="width: 400px;">
-    <n-text weight="medium" type="h6" htmlTag="div" v-text="'First'" />
-    <n-divider />
-    <n-text weight="medium" type="h6" htmlTag="div" v-text="'Second'" />
-    <n-divider />
-    <n-text weight="medium" type="h6" htmlTag="div" v-text="'Third'" />
-</n-card>
-
-
-<div class="n-mb-32 n-mt-16" style="display: flex; flex-direction: row; gap: 16px;">
-    <n-text weight="medium" type="h6" htmlTag="div" v-text="'First'" />
-    <n-divider  vertical />
-    <n-text weight="medium" type="h6" htmlTag="div" v-text="'Second'" />
-    <n-divider vertical />
-    <n-text weight="medium" type="h6" htmlTag="div" v-text="'Third'" />
-</div>
+::: details Code
+::: code-group
+<<< @/examples/components/divider/BasicUsage.vue#template{6,10,12} [Template]
+<<< @/examples/components/divider/BasicUsage.vue#script [Script]
+:::

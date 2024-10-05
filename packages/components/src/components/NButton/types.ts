@@ -1,4 +1,4 @@
-import NovaIcons from '@nova/icons'
+import NovaIcons from '@nova-org/icons'
 
 export type NButtonSize = 'sm' | 'md' | 'lg'
 export type NButtonRadius = 'full' | 'lg' | 'md' | 'sm' | 'none'

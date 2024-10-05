@@ -25,9 +25,9 @@
 </template>
 
 <script setup lang="ts">
-import {computed, CSSProperties} from 'vue'
+import {computed, type CSSProperties} from 'vue'
+import {type NOptionProps} from './types'
 import {parseColor} from 'src/utils'
-import {NOptionProps} from 'src/components/NOption/types.ts'
 
 const props = withDefaults(defineProps<NOptionProps>(), {
   size: 'md',

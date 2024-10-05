@@ -1,7 +1,7 @@
 # Text
 
 <script setup>
-import {NText} from '@nova/components'
+import {NText} from '@nova-org/components'
 </script>
 
   <n-text weight="regular" font-size="h1" html-tag="div"  v-text="'Nova UI Typography'"/>

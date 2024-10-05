@@ -1,4 +1,18 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.0.0"
+  "version": "0.0.1-next.5",
+  "command": {
+    "publish": {
+      "tempTag": true
+    },
+    "version": {
+      "allowBranch": [
+        "main",
+        "develop"
+      ],
+      "conventionalCommits": true,
+      "forcePublish": true,
+      "message": "chore: 🚀 Release %s"
+    }
+  }
 }

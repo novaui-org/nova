@@ -1,7 +1,15 @@
 {
-  "name": "@nova/storybook",
+  "name": "@nova-org/storybook",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.1-next.5",
+  "author": "Jozef Majzel <jozefmajzel1@gmail.com>",
+  "homepage": "https://novaui-org.github.io/nova/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novaui-org/nova.git",
+    "directory": "packages/storybook"
+  },
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

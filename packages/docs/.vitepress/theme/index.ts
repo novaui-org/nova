@@ -2,8 +2,8 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import '@nova-org/components/style.css'
 import './style.css'
-import '@nova/components/style.css'
 
 export default {
   extends: DefaultTheme,

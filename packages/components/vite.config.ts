@@ -1,12 +1,31 @@
-import {defineConfig} from 'vite'
+import {defineConfig, type PluginOption} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import svgLoader from 'vite-svg-loader'
 import path from 'node:path'
-import dts from 'vite-plugin-dts'
+import dtsPlugin from 'vite-plugin-dts'
+import {visualizer} from 'rollup-plugin-visualizer'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), svgLoader({defaultImport: 'component'}), dts()],
+  plugins: [
+    vue(),
+    svgLoader({defaultImport: 'component'}) as PluginOption,
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'src/styles/index.variables.scss',
+          dest: 'scss'
+        },
+        {
+          src: 'src/styles/variables/**',
+          dest: 'scss/variables'
+        }
+      ]
+    }),
+    dtsPlugin({insertTypesEntry: true}) as PluginOption,
+    visualizer({filename: './generated/stats.html'}) as PluginOption,
+  ],
   resolve: {
     alias: {
       'src': path.resolve(__dirname, './src'),
@@ -30,14 +49,14 @@ export default defineConfig({
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ['vue', '@nova/icons', '@oku-ui/motion-nuxt', 'motion'],
+      external: ['vue', '@nova-org/icons', '@oku-ui/motion'],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
           vue: 'Vue',
-          '@nova/icons': 'NovaIcons',
-          'motion': 'Motion',
+          '@nova-org/icons': 'NovaIcons',
+          '@oku-ui/motion': 'Motion',
         },
       },
     },

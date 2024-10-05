@@ -1,213 +1,106 @@
+<script setup>
+import {NButton, NIcon} from '@nova-org/components'
+
+import Default from '../examples/components/button/Default.vue'
+import Colors from '../examples/components/button/Colors.vue'
+import Variants from '../examples/components/button/Variants.vue'
+import Radius from '../examples/components/button/Radius.vue'
+import Sizes from '../examples/components/button/Sizes.vue'
+import WithIcon from '../examples/components/button/WithIcon.vue'
+import IconOnly from '../examples/components/button/IconOnly.vue'
+import DisplayContainer from '../examples/partials/DisplayContainer.vue'
+</script>
+
 # Button
 
-<script setup>
-import {NButton, NIcon} from '@nova/components'
-</script>
+Buttons provide a simple way for users to execute actions.
+
+## Import
+
+```ts
+import {NButton} from '@nova-org/components'
+```
 
 ## Usage
 
-### Colors
-
-<div class="n-mb-32 n-mt-16">
-    <n-button background-color="n-default" label="Default" class="n-mr-16" />
-    <n-button background-color="n-primary" label="Primary" class="n-mr-16" />
-    <n-button background-color="n-secondary" label="Secondary" class="n-mr-16" />
-    <n-button background-color="n-success" label="Success" class="n-mr-16" />
-    <n-button background-color="n-warning" label="Warning" class="n-mr-16" />
-    <n-button background-color="n-danger" label="Danger" class="n-mr-16" />
-</div>
+<display-container>
+    <default/>
+</display-container>
 
 ::: details Code
-
 ::: code-group
+<<< @/examples/components/button/Default.vue#template [Template]
+<<< @/examples/components/button/Default.vue#script [Script]
+:::
 
-```vue [Template]
+### Colors
 
-<div class="n-mb-32 n-mt-16">
-  <n-button background-color="n-default" label="Default" class="n-mr-16"/>
-  <n-button background-color="n-primary" label="Primary" class="n-mr-16"/>
-  <n-button background-color="n-secondary" label="Secondary" class="n-mr-16"/>
-  <n-button background-color="n-success" label="Success" class="n-mr-16"/>
-  <n-button background-color="n-warning" label="Warning" class="n-mr-16"/>
-  <n-button background-color="n-danger" label="Danger" class="n-mr-16"/>
-</div>
-```
+<display-container>
+    <colors/>
+</display-container>
 
-```vue [Script]
-
-<script setup>
-  import {NButton} from '@nova/components'
-</script>
-```
-
+::: details Code
+::: code-group
+<<< @/examples/components/button/Colors.vue#template [Template]
+<<< @/examples/components/button/Colors.vue#script [Script]
 :::
 
 ### Variants
 
-<div class="n-mb-32 n-mt-16">
-    <n-button variant="solid" label="Solid" class="n-mr-16" />
-    <n-button variant="shadow" label="Shadow" class="n-mr-16" />
-    <n-button variant="ghost" label="Ghost" class="n-mr-16" />
-    <n-button variant="outline" label="Outline" class="n-mr-16" />
-    <n-button variant="flat" label="Flat" class="n-mr-16" />
-</div>
+<display-container>
+    <variants/>
+</display-container>
 
 ::: details Code
-
 ::: code-group
-
-```vue [Template]
-
-<div class="n-mb-32 n-mt-16">
-  <n-button variant="solid" label="Solid" class="n-mr-16" />
-  <n-button variant="shadow" label="Shadow" class="n-mr-16" />
-  <n-button variant="ghost" label="Ghost" class="n-mr-16" />
-  <n-button variant="outline" label="Outline" class="n-mr-16" />
-  <n-button variant="flat" label="Flat" class="n-mr-16" />
-</div>
-```
-
-```vue [Script]
-
-<script setup>
-  import {NButton} from '@nova/components'
-</script>
-```
-
+<<< @/examples/components/button/Variants.vue#template [Template]
+<<< @/examples/components/button/Variants.vue#script [Script]
 :::
 
 ### Radius
 
-<div class="n-mb-32 n-mt-16">
-    <n-button radius="full" label="Full" class="n-mr-16" />
-    <n-button radius="lg" label="Large" class="n-mr-16" />
-    <n-button radius="md" label="Medium" class="n-mr-16" />
-    <n-button radius="sm" label="Small" class="n-mr-16" />
-    <n-button radius="none" label="None" class="n-mr-16" />
-</div>
+<display-container>
+    <radius/>
+</display-container>
 
 ::: details Code
-
 ::: code-group
-
-```vue [Template]
-
-<div class="n-mb-32 n-mt-16">
-  <n-button radius="full" label="Full" class="n-mr-16" />
-  <n-button radius="lg" label="Large" class="n-mr-16" />
-  <n-button radius="md" label="Medium" class="n-mr-16" />
-  <n-button radius="sm" label="Small" class="n-mr-16" />
-  <n-button radius="none" label="None" class="n-mr-16" />
-</div>
-```
-
-```vue [Script]
-
-<script setup>
-  import {NButton} from '@nova/components'
-</script>
-```
-
+<<< @/examples/components/button/Radius.vue#template [Template]
+<<< @/examples/components/button/Radius.vue#script [Script]
 :::
 
 ### Sizes
 
-<div class="n-mb-32 n-mt-16">
-    <n-button size="sm" label="Small" class="n-mr-16" />
-    <n-button size="md" label="Medium" class="n-mr-16" />
-    <n-button size="lg" label="Large" class="n-mr-16" />
-</div>
+<display-container>
+    <sizes/>
+</display-container>
 
 ::: details Code
-
 ::: code-group
-
-```vue [Template]
-
-<div class="n-mb-32 n-mt-16">
-  <n-button size="sm" label="Small" class="n-mr-16" />
-  <n-button size="md" label="Medium" class="n-mr-16" />
-  <n-button size="lg" label="Large" class="n-mr-16" />
-</div>
-```
-
-```vue [Script]
-
-<script setup>
-  import {NButton} from '@nova/components'
-</script>
-```
-
+<<< @/examples/components/button/Sizes.vue#template [Template]
+<<< @/examples/components/button/Sizes.vue#script [Script]
 :::
 
 ### With icon
 
-<div class="n-mb-32 n-mt-16">
-    <n-button icon-left="vuesax/linear/add-circle" label="Icon left" class="n-mr-16" />
-    <n-button icon-right="vuesax/linear/add-circle" label="Icon right" class="n-mr-16" />
-    <n-button icon-left="vuesax/linear/add-circle" icon-right="vuesax/linear/add-circle" label="Icons both" class="n-mr-16" />
-</div>
+<display-container>
+    <with-icon/>
+</display-container>
 
 ::: details Code
-
 ::: code-group
-
-```vue [Template]
-
-<div class="n-mb-32 n-mt-16">
-  <n-button icon-left="vuesax/linear/add-circle" label="Icon left" class="n-mr-16" />
-  <n-button icon-right="vuesax/linear/add-circle" label="Icon right" class="n-mr-16" />
-  <n-button icon-left="vuesax/linear/add-circle" icon-right="vuesax/linear/add-circle" label="Icons both" class="n-mr-16" />
-</div>
-```
-
-```vue [Script]
-
-<script setup>
-  import {NButton} from '@nova/components'
-</script>
-```
-
+<<< @/examples/components/button/WithIcon.vue#template [Template]
+<<< @/examples/components/button/WithIcon.vue#script [Script]
 :::
 
 ### Icon only
 
-<div class="n-mb-32 n-mt-16">
-    <n-button background-color="n-primary" class="n-mr-16" >
-        <n-icon name="vuesax/linear/watch" size="22px" />
-    </n-button>
-    <n-button background-color="n-primary"  class="n-mr-16" >
-        <n-icon name="vuesax/linear/add-circle" size="22px" />
-    </n-button>
-    <n-button background-color="n-primary"  class="n-mr-16" >
-        <n-icon name="vuesax/linear/airpods" size="22px" />
-    </n-button>
-</div>
+<display-container>
+    <icon-only/>
+</display-container>
 
 ::: details Code
-
 ::: code-group
-
-```vue [Template]
-
-<div class="n-mb-32 n-mt-16">
-  <n-button background-color="n-primary" class="n-mr-16">
-    <n-icon name="vuesax/linear/watch" size="22px"/>
-  </n-button>
-  <n-button background-color="n-primary" class="n-mr-16">
-    <n-icon name="vuesax/linear/add-circle" size="22px"/>
-  </n-button>
-  <n-button background-color="n-primary" class="n-mr-16">
-    <n-icon name="vuesax/linear/airpods" size="22px"/>
-  </n-button>
-</div>
-```
-
-```vue [Script]
-
-<script setup>
-  import {NButton} from '@nova/components'
-</script>
-```
-
+<<< @/examples/components/button/IconOnly.vue#template [Template]
+<<< @/examples/components/button/IconOnly.vue#script [Script]
 :::

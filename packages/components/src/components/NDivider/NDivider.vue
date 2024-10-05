@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import {NDividerProps} from 'src/components/NDivider/types.ts'
+import {type NDividerProps} from './types'
 
 defineProps<NDividerProps>()
 </script>
@@ -18,6 +18,7 @@ defineProps<NDividerProps>()
 
   padding: 0;
   margin: 0;
+  border: 0;
   background-color: $n-divider;
 
   &.n-divider--vertical {

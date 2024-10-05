@@ -26,10 +26,10 @@
 </template>
 
 <script setup lang="ts">
-import {NCheckboxEmits, NCheckboxProps} from 'src/components/NCheckbox/types.ts'
+import {type NCheckboxEmits, type NCheckboxProps} from './types'
 import {computed} from 'vue'
-import NCheckboxIcon from 'src/components/NCheckboxIcon/NCheckboxIcon.vue'
-import NOption from 'src/components/NOption/NOption.vue'
+import NCheckboxIcon from '../NCheckboxIcon/NCheckboxIcon.vue'
+import NOption from '../NOption/NOption.vue'
 
 const emit = defineEmits<NCheckboxEmits>()
 const props = withDefaults(defineProps<NCheckboxProps>(), {
@@ -37,11 +37,11 @@ const props = withDefaults(defineProps<NCheckboxProps>(), {
   color: 'n-primary',
 })
 
-const checked = computed<boolean>(() => Array.isArray(props.modelValue) ? props.modelValue.includes(props.value) : props.modelValue)
+const checked = computed<boolean>(() => Array.isArray(props.modelValue) ? props.modelValue.includes(props.value!) : props.modelValue)
 
 function onClick() {
   if (Array.isArray(props.modelValue)) {
-    emit('update:modelValue', checked.value ? props.modelValue.filter(v => v !== props.value) : [...props.modelValue, props.value])
+    emit('update:modelValue', checked.value ? props.modelValue.filter(v => v !== props.value!) : [...props.modelValue, props.value!])
   } else {
     emit('update:modelValue', !checked.value)
   }
