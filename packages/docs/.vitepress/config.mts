@@ -22,6 +22,7 @@ export default defineConfig({
 
     socialLinks: [
       {icon: 'github', link: 'https://github.com/xmajzel/nova'},
+      {icon: 'npm', link: 'https://www.npmjs.com/package/@nova-org/components'},
     ],
     editLink: {
       pattern: 'https://github.com/xmajzel/nova/tree/main/packages/docs/:path',
@@ -59,15 +60,18 @@ export default defineConfig({
         },
       },
     },
+    ssr: {
+      noExternal: ['@oku-ui/motion'],
+    },
   },
 })
 
 function convertToSpacedString(input: string): string {
   /* Add space between lowercase and uppercase letters */
-  const spacedString = input.replace(/([a-z])([A-Z])/g, '$1 $2');
+  const spacedString = input.replace(/([a-z])([A-Z])/g, '$1 $2')
 
   /* Convert the string to lowercase and then capitalize the first word */
-  return spacedString.charAt(0).toUpperCase() + spacedString.slice(1).toLowerCase();
+  return spacedString.charAt(0).toUpperCase() + spacedString.slice(1).toLowerCase()
 }
 
 // TODO: Add loading recursively
