@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-next.5](https://github.com/novaui-org/nova/compare/v0.0.1-next.4...v0.0.1-next.5) (2024-10-05)
+
+
+### Bug Fixes
+
+* **components/NCard:** add also transition for transform when card is flat ([a20c5d4](https://github.com/novaui-org/nova/commit/a20c5d4f30a29695335c5a03d06e053c772707e1))
+
+
+
+
+
 ## [0.0.1-next.4](https://github.com/novaui-org/nova/compare/v0.0.1-next.3...v0.0.1-next.4) (2024-10-05)
 
 

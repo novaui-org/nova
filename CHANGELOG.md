@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-next.5](https://github.com/novaui-org/nova/compare/v0.0.1-next.4...v0.0.1-next.5) (2024-10-05)
+
+
+### Bug Fixes
+
+* **components/NCard:** add also transition for transform when card is flat ([a20c5d4](https://github.com/novaui-org/nova/commit/a20c5d4f30a29695335c5a03d06e053c772707e1))
+
+
+### Features
+
+* **docs/DisplayContainer:** add support for card variant ([da2882a](https://github.com/novaui-org/nova/commit/da2882a7794a2b57d63067bcdd1e525e84b24fb9))
+* **docs/Installation:** add complete installation documentation ([f922309](https://github.com/novaui-org/nova/commit/f9223090eebd0560ff747c2bb255a5043cb18c6c))
+* **docs:** extend loading dirs - to load them recursively ([3456d0b](https://github.com/novaui-org/nova/commit/3456d0bec906a4026017d2ab5afe479c9af343fe))
+* **docs:** style theme a bit ([b19dbce](https://github.com/novaui-org/nova/commit/b19dbce3315400a9a843f5ee4d1ce4f33cace81d))
+
+
+
+
+
 ## [0.0.1-next.4](https://github.com/novaui-org/nova/compare/v0.0.1-next.3...v0.0.1-next.4) (2024-10-05)
 
 
