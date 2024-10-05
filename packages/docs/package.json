@@ -1,6 +1,6 @@
 {
   "name": "@nova-org/docs",
-  "version": "0.0.1-next.2",
+  "version": "0.0.1-next.3",
   "private": true,
   "author": "Jozef Majzel <jozefmajzel1@gmail.com>",
   "homepage": "https://novaui-org.github.io/nova/",
@@ -21,8 +21,8 @@
     "vitepress": "^1.1.0"
   },
   "dependencies": {
-    "@nova-org/components": "^0.0.1-next.2",
-    "@nova-org/icons": "^0.0.1-next.2",
+    "@nova-org/components": "^0.0.1-next.3",
+    "@nova-org/icons": "^0.0.1-next.3",
     "@oku-ui/motion-nuxt": "^0.2.1",
     "motion": "^10.16.4"
   },
