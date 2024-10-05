@@ -37,9 +37,8 @@
   },
   "dependencies": {
     "@nova-org/icons": "^0.0.1-next.3",
-    "@oku-ui/motion-nuxt": "^0.2.1",
+    "@oku-ui/motion": "^0.3.4",
     "color2k": "^2.0.3",
-    "motion": "^10.16.4",
     "vue": "^3.4.21"
   },
   "devDependencies": {
