@@ -89,7 +89,7 @@ withDefaults(defineProps<NCardProps>(), {
   }
 
   &.n-card--variant-flat {
-    transition: box-shadow ease-in-out 200ms;
+    transition: transform ease-in-out 200ms, box-shadow ease-in-out 200ms;
 
     &.n-card--hoverable:hover {
       box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .05)
