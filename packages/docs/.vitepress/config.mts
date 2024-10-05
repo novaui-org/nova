@@ -1,5 +1,5 @@
 import {defineConfig} from 'vitepress'
-import {readdirSync} from 'node:fs'
+import {readdirSync, lstatSync, existsSync} from 'node:fs'
 import path from 'node:path'
 
 // https://vitepress.dev/reference/site-config
@@ -41,6 +41,7 @@ export default defineConfig({
     outline: {
       level: 'deep',
     },
+    externalLinkIcon: true,
   },
   /* https://github.com/vitejs/vite/issues/819 */
   /* https://vitepress.dev/reference/site-config#vite */
@@ -74,15 +75,36 @@ function convertToSpacedString(input: string): string {
   return spacedString.charAt(0).toUpperCase() + spacedString.slice(1).toLowerCase()
 }
 
-// TODO: Add loading recursively
-//  - as well as support for index.md (case insensitive) (@see https://vitepress.dev/guide/markdown#internal-links)
 function loadDirectoryEntries(title, directory) {
+  const absolutePath = path.join(__dirname, `../${directory}`)
+
+  /* Build link - if an index file exists */
+  const link = existsSync(path.join(absolutePath, 'Index.md'))
+    ? `/${directory}/Index`
+    : existsSync(path.join(absolutePath, 'index.md'))
+      ? `/${directory}/index`
+      : undefined
+
   return {
     text: title,
-    items: readdirSync(path.join(__dirname, `../${directory}`)).map(fileName => {
-      fileName = fileName.split('.')[0]
-      return {text: convertToSpacedString(fileName), link: `/${directory}/${fileName}`}
+    items: readdirSync(absolutePath).flatMap(directoryEntry => {
+      /* Handle dirs recursively */
+      const isDir = lstatSync(path.join(absolutePath, directoryEntry)).isDirectory()
+      if (isDir) {
+        return [loadDirectoryEntries(convertToSpacedString(directoryEntry), `${directory}/${directoryEntry}`)]
+      }
+
+      directoryEntry = directoryEntry.split('.')[0]
+
+      /* Ignore index files */
+      if (directoryEntry.toLowerCase() === 'index') {
+        return []
+      }
+
+      /* Build link */
+      return {text: convertToSpacedString(directoryEntry), link: `/${directory}/${directoryEntry}`}
     }).sort(compareStrings),
+    link,
   }
 }
 
