@@ -2,7 +2,7 @@
   <n-card
     class="display-container n-mt-16"
     :class="{'display-container--vertical': vertical}"
-    variant="outline"
+    :variant="variant"
     radius="md"
     size="md"
   >
@@ -13,9 +13,11 @@
 </template>
 
 <script setup lang="ts">
-import {NCard} from '@nova-org/components'
+import {NCard, NCardProps} from '@nova-org/components'
 
-defineProps<{ vertical?: boolean }>()
+withDefaults(defineProps<{ vertical?: boolean, variant?: NCardProps['variant'] }>(),{
+  variant: 'outline'
+})
 </script>
 
 <style scoped lang="scss">
