@@ -58,6 +58,7 @@ export default defineConfig({
       preprocessorOptions: {
         scss: {
           additionalData: '@import "@nova-org/components/scss/index.variables.scss";',
+          api: 'modern-compiler',
         },
       },
     },

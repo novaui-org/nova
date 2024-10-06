@@ -25,8 +25,7 @@ Slide transition (horizontal) animates element's:
 - **Width**
 - **Margin** (left, right)
 - **Padding** (left, right)
-
-[//]: # (TODO: Add animating flex - or wrap single into separate DIV)
+- **Flex gap** - when an element is placed inside a flexbox element with a gap property set, it will also animate it
 
 <display-container>
     <single/>

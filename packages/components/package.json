@@ -39,17 +39,17 @@
     "@nova-org/icons": "^0.0.1",
     "@oku-ui/motion": "^0.3.4",
     "color2k": "^2.0.3",
-    "vue": "^3.4.21"
+    "vue": "^3.5.11"
   },
   "devDependencies": {
-    "@types/node": "^20.12.11",
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@types/node": "^20.16.10",
+    "@vitejs/plugin-vue": "^5.1.4",
     "rollup-plugin-visualizer": "^5.12.0",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.11",
-    "vite-plugin-dts": "^3.9.1",
-    "vite-plugin-static-copy": "^1.0.4",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^4.2.3",
+    "vite-plugin-static-copy": "^1.0.6",
     "vite-svg-loader": "^5.1.0",
-    "vue-tsc": "^2.0.17"
+    "vue-tsc": "^2.1.6"
   }
 }
