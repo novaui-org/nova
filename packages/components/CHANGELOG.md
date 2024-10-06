@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-next.6](https://github.com/novaui-org/nova/compare/v0.0.1-next.5...v0.0.1-next.6) (2024-10-06)
+
+
+### Features
+
+* **components/NSlideTransition:** add support also for animating gap, when an element is inside flexbox ([d34b8e6](https://github.com/novaui-org/nova/commit/d34b8e6297c586a5cb288de59d1597b5c5e76381))
+
+
+
+
+
 ## [0.0.1-next.5](https://github.com/novaui-org/nova/compare/v0.0.1-next.4...v0.0.1-next.5) (2024-10-05)
 
 

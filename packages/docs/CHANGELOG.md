@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-next.6](https://github.com/novaui-org/nova/compare/v0.0.1-next.5...v0.0.1-next.6) (2024-10-06)
+
+
+### Features
+
+* **docs/Slide:** add information about animating the gap flexbox property ([1181641](https://github.com/novaui-org/nova/commit/118164111f9d6cb2d8dedbfeccd8774befa8c6a0))
+
+
+
+
+
 ## [0.0.1-next.5](https://github.com/novaui-org/nova/compare/v0.0.1-next.4...v0.0.1-next.5) (2024-10-05)
 
 
