@@ -12,7 +12,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "files": [
     "dist"
@@ -36,7 +36,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@nova-org/icons": "^0.0.1",
+    "@nova-org/icons": "^0.1.0",
     "@oku-ui/motion": "^0.3.4",
     "color2k": "^2.0.3",
     "vue": "^3.5.11"
