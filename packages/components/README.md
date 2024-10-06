@@ -13,7 +13,7 @@
 
 ## Installation
 
-Visit <a aria-label="nova learn" href="https://novaui-org.github.io/nova/guide/Installation.html">https://novaui-org.github.io/nova/guide/Installation.html</a>
+Visit <a aria-label="nova learn" href="https://novaui-org.github.io/nova/guide/Installation.html">https://novaui-org.github.io/nova/guide/Installation/Index.html</a>
 to get started with Nova.
 
 ## Documentation
