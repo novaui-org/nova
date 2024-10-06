@@ -35,11 +35,11 @@
     "icons:generate": "npx ts-node --esm ./scripts/index.mts icons"
   },
   "devDependencies": {
-    "@types/node": "^20.11.28",
-    "typescript": "^5.4.2",
-    "vite": "^5.1.6",
-    "vite-plugin-dts": "^3.7.3",
+    "@types/node": "^20.16.10",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^4.2.3",
     "vite-svg-loader": "^5.1.0",
-    "vue-tsc": "^2.0.6"
+    "vue-tsc": "^2.1.6"
   }
 }
