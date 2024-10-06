@@ -7,8 +7,8 @@ import Multiple from '../examples/transitions/slide-vertical/Multiple.vue'
 
 # Slide transition - vertical
 
-Slide transition (vertical) provides a simple way to **animate height** of single or multiple components or HTML elements when
-using conditional rendering.
+Slide transition (vertical) provides a simple way to **animate height** of single or multiple components or HTML
+elements when using conditional rendering.
 
 ## Import
 
@@ -25,8 +25,7 @@ Slide transition (vertical) animates element's:
 - **Height**
 - **Margin** (top, bottom)
 - **Padding** (top, bottom)
-
-[//]: # (TODO: Add animating flex - or wrap single into separate DIV)
+- **Flex gap** - when an element is placed inside a flexbox element with a gap property set, it will also animate it
 
 <display-container vertical>
     <single/>
