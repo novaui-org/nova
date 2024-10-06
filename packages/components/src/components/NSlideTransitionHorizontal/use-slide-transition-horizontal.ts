@@ -35,7 +35,7 @@ function getElementStyle(element: HTMLElement) {
   }
 }
 
-function getEnterKeyframes(width: string, initialStyle: initialStyle) {
+function getEnterKeyframes(width: string, initialStyle: initialStyle, parentGap: string | null) {
   return [
     {
       width: CLOSED_SIZE,
@@ -45,7 +45,8 @@ function getEnterKeyframes(width: string, initialStyle: initialStyle) {
       paddingRight: CLOSED_SIZE,
       borderLeftWidth: CLOSED_SIZE,
       borderRightWidth: CLOSED_SIZE,
-      marginLeft: CLOSED_SIZE,
+      /* Handle case, where item is inside flexbox and gap is used */
+      marginLeft: parentGap ? `-${parentGap}` : CLOSED_SIZE,
       marginRight: CLOSED_SIZE,
     },
     {
@@ -80,6 +81,20 @@ function animateTransition(
   return animation
 }
 
+function getParentGap(element: Element): string | null {
+  const parentElement = element.parentElement
+  if (!parentElement) {
+    return null
+  }
+
+  const {columnGap, display} = getComputedStyle(element.parentElement!)
+  if (display !== 'flex' || columnGap === 'normal') {
+    return null
+  }
+
+  return columnGap
+}
+
 export function useSlideTransitionHorizontal(props: NSlideTransitionProps) {
   function enterTransition(element: Element, doneCallback: () => void) {
     const initialStyle = getElementStyle(<HTMLElement>element)
@@ -88,7 +103,7 @@ export function useSlideTransitionHorizontal(props: NSlideTransitionProps) {
     ;(<HTMLElement>element).style.width = width
     ;(<HTMLElement>element).style.overflow = 'hidden'
 
-    const keyframes = getEnterKeyframes(width, initialStyle)
+    const keyframes = getEnterKeyframes(width, initialStyle, getParentGap(element))
     const options = {duration: props.duration, easing: 'ease-in-out'}
     animateTransition(<HTMLElement>element, initialStyle, doneCallback, keyframes, options)
   }
@@ -100,7 +115,7 @@ export function useSlideTransitionHorizontal(props: NSlideTransitionProps) {
     ;(<HTMLElement>element).style.width = width
     ;(<HTMLElement>element).style.overflow = 'hidden'
 
-    const keyframes = getEnterKeyframes(width, initialStyle).reverse()
+    const keyframes = getEnterKeyframes(width, initialStyle, getParentGap(element)).reverse()
     const options = {duration: props.duration, easing: 'ease-in-out'}
     animateTransition(<HTMLElement>element, initialStyle, doneCallback, keyframes, options)
   }
