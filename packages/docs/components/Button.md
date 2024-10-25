@@ -9,6 +9,8 @@ import Sizes from '../examples/components/button/Sizes.vue'
 import WithIcon from '../examples/components/button/WithIcon.vue'
 import IconOnly from '../examples/components/button/IconOnly.vue'
 import DisplayContainer from '../examples/partials/DisplayContainer.vue'
+import PropsTable from '../examples/partials/PropsTable.vue'
+import SlotsTable from '../examples/partials/SlotsTable.vue'
 </script>
 
 # Button
@@ -104,3 +106,14 @@ import {NButton} from '@nova-org/components'
 <<< @/examples/components/button/IconOnly.vue#template [Template]
 <<< @/examples/components/button/IconOnly.vue#script [Script]
 :::
+
+## API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NButton.json"/>
+
+### Slots
+
+<slots-table class="n-mt-24" path="components/NButton.json"/>
+
