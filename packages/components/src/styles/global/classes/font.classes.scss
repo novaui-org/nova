@@ -57,7 +57,8 @@ $font-sizes-list: (
         'h4': ($n-font-size-h4, $n-line-height-heading),
         'h5': ($n-font-size-h5, $n-line-height-heading),
         'h6': ($n-font-size-h6, $n-line-height-heading),
-        'paragraph': ($n-font-size-html, $n-line-height-body),
+        'paragraph': ($n-font-size-paragraph, $n-line-height-body),
+        'paragraph-2': ($n-font-size-paragraph-2, $n-line-height-body),
         'small': ($n-font-size-small, $n-line-height-body),
 );
 
