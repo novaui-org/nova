@@ -1,6 +1,7 @@
 import {defineConfig} from 'vitepress'
 import {readdirSync, lstatSync, existsSync} from 'node:fs'
 import path from 'node:path'
+import {viteStaticCopy} from 'vite-plugin-static-copy'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -54,6 +55,16 @@ export default defineConfig({
   /* https://stackoverflow.com/questions/28283652/importing-sass-through-npm */
   /* https://github.com/vitejs/vite/issues/382 */
   vite: {
+    plugins: [
+      viteStaticCopy({
+        targets: [
+          {
+            src: '../../node_modules/@nova-org/components/dist/meta/components/**/*.json',
+            dest: 'meta/components',
+          },
+        ],
+      }),
+    ],
     css: {
       preprocessorOptions: {
         scss: {

@@ -1,0 +1,83 @@
+{
+  "props": {
+    "size": {
+      "type": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "description": "Change the size of the component.",
+      "default": "md"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "Put component in disabled mode.",
+      "default": false
+    },
+    "label": {
+      "type": "string",
+      "description": "Button label. Has priority over default slot."
+    },
+    "icon-left": {
+      "type": "string",
+      "description": "Icon from NovaIcon library. Is right after the 'before' slot."
+    },
+    "icon-right": {
+      "type": "string",
+      "description": "Icon from NovaIcon library. Is right before the 'after' slot."
+    },
+    "icon-size": {
+      "type": "string",
+      "description": "Size of icons in CSS units.",
+      "default": "16px"
+    },
+    "background-color": {
+      "type": "string",
+      "description": "Background color in Nova colors or CSS units.",
+      "default": "n-primary"
+    },
+    "text-color": {
+      "type": "string",
+      "description": "Text color in Nova colors or CSS units.",
+      "default": "n-foreground"
+    },
+    "radius": {
+      "type": [
+        "full",
+        "lg",
+        "md",
+        "sm",
+        "none"
+      ],
+      "description": "Border radius of the button.",
+      "default": "lg"
+    },
+    "variant": {
+      "type": [
+        "solid",
+        "shadow",
+        "ghost",
+        "outline",
+        "flat"
+      ],
+      "description": "Design of the button.",
+      "default": "solid"
+    },
+    "ripple": {
+      "type": "boolean",
+      "description": "Disable material ripple by setting it to 'false'.",
+      "default": "true"
+    }
+  },
+  "slots": {
+    "default": {
+      "description": "Default slot can be used as label, unless 'label' prop is specified."
+    },
+    "before": {
+      "description": "Slot before label and icon-left."
+    },
+    "after": {
+      "description": "Slot after label and icon-right."
+    }
+  }
+}

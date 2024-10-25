@@ -11,6 +11,7 @@ import {NText} from '@nova-org/components'
   <n-text weight="regular" font-size="h5" html-tag="div"  v-text="'Nova UI Typography'"/>
   <n-text weight="regular" font-size="h6" html-tag="div"  v-text="'Nova UI Typography'"/>
   <n-text weight="regular" font-size="paragraph" html-tag="div"  v-text="'Nova UI Typography'"/>
+  <n-text weight="regular" font-size="paragraph-2" html-tag="div"  v-text="'Nova UI Typography'"/>
   <n-text weight="regular" font-size="small" html-tag="div"  v-text="'Nova UI Typography'"/>
 
 ::: details Code
@@ -33,6 +34,8 @@ import {NText} from '@nova-org/components'
   <n-text weight="bolder" font-size="h6" html-tag="div" v-text="'Some text'"/>
 
   <n-text weight="bolder" font-size="paragraph" html-tag="div" v-text="'Some text'"/>
+  
+  <n-text weight="bolder" font-size="paragraph-2" html-tag="div" v-text="'Some text'"/>
 
   <n-text weight="bolder" font-size="small" html-tag="div" v-text="'Some text'"/>
 </template>
