@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-next.7](https://github.com/novaui-org/nova/compare/v0.0.1-next.6...v0.0.1-next.7) (2024-10-25)
+
+
+### Features
+
+* **docs:** add paragraph-2 example to Text ([fbde99f](https://github.com/novaui-org/nova/commit/fbde99fa73b17416b1fbf8c63fee41d628146cb9))
+* **docs:** add Props and Slots api docs ([7ca9eeb](https://github.com/novaui-org/nova/commit/7ca9eebd948f2e3710dc1f08ad947893763a3843))
+* **docs:** copy meta files from components to dist ([6c1e732](https://github.com/novaui-org/nova/commit/6c1e732b769787a5936205dae55ba5d47d213b3d))
+
+
+
+
+
 ## [0.0.1-next.6](https://github.com/novaui-org/nova/compare/v0.0.1-next.5...v0.0.1-next.6) (2024-10-06)
 
 
