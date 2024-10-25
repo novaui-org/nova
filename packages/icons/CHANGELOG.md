@@ -11,6 +11,22 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+# [0.1.0](https://github.com/novaui-org/nova/compare/v0.0.1...v0.1.0) (2024-10-06)
+
+**Note:** Version bump only for package @nova-org/icons
+
+
+
+
+
+## [0.0.1](https://github.com/novaui-org/nova/compare/v0.0.1-next.5...v0.0.1) (2024-10-05)
+
+**Note:** Version bump only for package @nova-org/icons
+
+
+
+
+
 ## [0.0.1-next.5](https://github.com/novaui-org/nova/compare/v0.0.1-next.4...v0.0.1-next.5) (2024-10-05)
 
 **Note:** Version bump only for package @nova-org/icons
