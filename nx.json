@@ -10,8 +10,8 @@
   "targetDefaults": {
     "dev": {
       "dependsOn": [
-        "^dev",
-        "^build"
+        "^build",
+        "^dev"
       ],
       "inputs": [
         "default"
