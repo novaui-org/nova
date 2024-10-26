@@ -2,6 +2,8 @@
 
 <script setup>
 import {NText} from '@nova-org/components'
+import PropsTable from '../examples/partials/PropsTable.vue'
+import SlotsTable from '../examples/partials/SlotsTable.vue'
 </script>
 
   <n-text weight="regular" font-size="h1" html-tag="div" :text="'Nova UI Typography'"/>
@@ -42,3 +44,15 @@ import {NText} from '@nova-org/components'
 ```
 
 :::
+
+## API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NText.json"/>
+
+### Slots
+
+<slots-table class="n-mt-24" path="components/NText.json"/>
+
+

@@ -9,6 +9,8 @@ import Sizes from '../examples/components/card/Sizes.vue'
 import Slots from '../examples/components/card/Slots.vue'
 import Divider from '../examples/components/card/Divider.vue'
 import Composition from '../examples/components/card/Composition.vue'
+import PropsTable from '../examples/partials/PropsTable.vue'
+import SlotsTable from '../examples/partials/SlotsTable.vue'
 </script>
 
 # Card
@@ -141,3 +143,12 @@ You can use other **Nova** components inside the card to compose a more complex 
 <<< @/examples/components/card/Composition.vue#style [Style]
 :::
 
+## API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NCard.json"/>
+
+### Slots
+
+<slots-table class="n-mt-24" path="components/NCard.json"/>

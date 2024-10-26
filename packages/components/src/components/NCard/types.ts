@@ -6,7 +6,6 @@ export type NCardDivider = 'header' | 'footer' | 'both' | 'none'
 export interface NCardProps {
   radius?: NCardRadius
   variant?: NCardVariant
-  title?: string
   hoverable?: boolean
   size: NCardSize
   divider: NCardDivider
