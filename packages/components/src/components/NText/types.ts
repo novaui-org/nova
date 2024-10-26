@@ -4,5 +4,5 @@ export interface NTextProps {
   fontSize?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' |  'paragraph' | 'small' | 'paragraph-2'
   htmlTag?: string
   visibleLines?: number
-  text: string
+  text?: string
 }
