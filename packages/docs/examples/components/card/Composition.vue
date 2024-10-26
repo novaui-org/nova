@@ -2,8 +2,8 @@
 <template>
   <n-card divider="header" hoverable variant="shadow-1" size="lg">
     <template #header>
-      <n-text weight="medium" font-size="h5" html-tag="div" v-text="'🚀 Nova UI'"/>
-      <n-text weight="light" font-size="small" html-tag="div" v-text="'Beautiful, fast and modern Vue 3 UI library.'"/>
+      <n-text weight="medium" font-size="h5" html-tag="div" :text="'🚀 Nova UI'"/>
+      <n-text weight="light" font-size="small" html-tag="div" :text="'Beautiful, fast and modern Vue 3 UI library.'"/>
     </template>
     Oriented towards simplicity and ultimate User experience.
     <template #footer>

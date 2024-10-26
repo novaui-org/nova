@@ -1,18 +1,18 @@
 <!-- #region template -->
 <template>
   <n-card size="sm">
-    <n-text weight="medium" font-size="paragraph" html-tag="div" v-text="'Small'"/>
-    <n-text weight="light" font-size="small" html-tag="div" v-text="'Modern and responsive.'"/>
+    <n-text weight="medium" font-size="paragraph" html-tag="div" :text="'Small'"/>
+    <n-text weight="light" font-size="small" html-tag="div" :text="'Modern and responsive.'"/>
   </n-card>
 
   <n-card size="md">
-    <n-text weight="medium" font-size="paragraph" html-tag="div" v-text="'Medium'"/>
-    <n-text weight="light" font-size="small" html-tag="div" v-text="'Modern and responsive.'"/>
+    <n-text weight="medium" font-size="paragraph" html-tag="div" :text="'Medium'"/>
+    <n-text weight="light" font-size="small" html-tag="div" :text="'Modern and responsive.'"/>
   </n-card>
 
   <n-card size="lg">
-    <n-text weight="medium" font-size="paragraph" html-tag="div" v-text="'Large'"/>
-    <n-text weight="light" font-size="small" html-tag="div" v-text="'Modern and responsive.'"/>
+    <n-text weight="medium" font-size="paragraph" html-tag="div" :text="'Large'"/>
+    <n-text weight="light" font-size="small" html-tag="div" :text="'Modern and responsive.'"/>
   </n-card>
 </template>
 <!-- #endregion template -->

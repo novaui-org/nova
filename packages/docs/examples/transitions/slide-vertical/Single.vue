@@ -4,8 +4,8 @@
 
   <n-slide-transition>
     <n-card v-if="modelValue" size="sm">
-      <n-text weight="medium" font-size="paragraph" html-tag="div" v-text="'Small'"/>
-      <n-text weight="light" font-size="small" html-tag="div" v-text="'Modern and responsive.'"/>
+      <n-text weight="medium" font-size="paragraph" html-tag="div" :text="'Small'"/>
+      <n-text weight="light" font-size="small" html-tag="div" :text="'Modern and responsive.'"/>
     </n-card>
   </n-slide-transition>
 </template>
