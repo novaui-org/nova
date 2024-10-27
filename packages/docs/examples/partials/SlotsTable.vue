@@ -2,19 +2,19 @@
   <div class="slots_table__container">
     <div class="slots_table">
       <div class="slots_table__header">
-        <n-text font-size="small" weight="regular" v-text="'Slot'"/>
-        <n-text font-size="small" weight="regular" v-text="'Description'"/>
+        <n-text font-size="small" weight="regular" :text="'Slot'"/>
+        <n-text font-size="small" weight="regular" :text="'Description'"/>
       </div>
 
       <div class="slots_table__content">
         <template v-for="(apiSlot, index) in apiSlots" :key="apiSlot.name">
           <div class="slots_table__row">
-            <n-text font-size="paragraph-2" weight="medium" v-text="apiSlot.name"/>
+            <n-text font-size="paragraph-2" weight="medium" :text="apiSlot.name"/>
             <n-text
               class="slots_table__row-type-description"
               weight="light"
               font-size="small"
-              v-text="apiSlot.description"
+              :text="apiSlot.description"
             />
           </div>
           <n-divider v-if="(index + 1) < apiSlots.length"/>

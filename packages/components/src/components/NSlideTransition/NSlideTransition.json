@@ -1,0 +1,14 @@
+{
+  "props": {
+    "duration": {
+      "type": "number",
+      "description": "Duration of transition in milliseconds",
+      "default": 300
+    }
+  },
+  "slots": {
+    "default": {
+      "description": "Use default slot for your component/s."
+    }
+  }
+}

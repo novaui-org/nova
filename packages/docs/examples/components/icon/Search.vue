@@ -2,7 +2,7 @@
 <template>
   <n-card variant="flat" class="docs-search">
     <div class="docs-search__input-container">
-      <n-text v-text="'Search for icon'" font-size="small" weight="medium"/>
+      <n-text :text="'Search for icon'" font-size="small" weight="medium"/>
 
       <div class="docs-search__input-row">
         <input class="docs-search__input" type="search" v-model.lazy="modelValue"/>
@@ -19,7 +19,7 @@
             style="display: block"
             font-size="small"
             weight="medium"
-            v-text="iconName"
+            :text="iconName"
           />
           <n-slide-transition>
             <n-text
@@ -27,7 +27,7 @@
               style="display: block"
               font-size="small"
               weight="medium"
-              v-text="'Copied'"
+              :text="'Copied'"
             />
           </n-slide-transition>
         </template>

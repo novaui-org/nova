@@ -1,6 +1,7 @@
 <script setup>
 import BasicUsage from '../examples/components/divider/BasicUsage.vue'
 import DisplayContainer from '../examples/partials/DisplayContainer.vue'
+import PropsTable from '../examples/partials/PropsTable.vue'
 </script>
 
 # Divider
@@ -25,3 +26,9 @@ import {NDivider} from '@nova-org/components'
 <<< @/examples/components/divider/BasicUsage.vue#template{6,10,12} [Template]
 <<< @/examples/components/divider/BasicUsage.vue#script [Script]
 :::
+
+## API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NDivider.json"/>

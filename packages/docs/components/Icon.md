@@ -2,6 +2,7 @@
 import DisplayContainer from '../examples/partials/DisplayContainer.vue'
 import BasicUsage from '../examples/components/icon/BasicUsage.vue'
 import Search from '../examples/components/icon/Search.vue'
+import PropsTable from '../examples/partials/PropsTable.vue'
 </script>
 
 # Icon
@@ -28,3 +29,9 @@ import {NIcon} from '@nova-org/components'
 :::
 
 <search/>
+
+## API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NIcon.json"/>

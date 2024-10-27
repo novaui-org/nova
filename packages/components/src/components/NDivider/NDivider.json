@@ -1,0 +1,11 @@
+{
+  "props": {
+    "vertical": {
+      "type": "boolean",
+      "description": "If set to true, the separator will be vertical.",
+      "default": false
+    }
+  },
+  "slots": {
+  }
+}

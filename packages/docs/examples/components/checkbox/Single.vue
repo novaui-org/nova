@@ -5,7 +5,7 @@
   </n-options-group>
 
   <div>
-    <n-text font-size="paragraph" weight="medium" v-text="'Model value:'"/>
+    <n-text font-size="paragraph" weight="medium" :text="'Model value:'"/>
     {{ modelValue }}
   </div>
 </template>

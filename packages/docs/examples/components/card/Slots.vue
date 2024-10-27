@@ -2,8 +2,8 @@
 <template>
   <n-card size="lg">
     <template #header>
-      <n-text weight="medium" font-size="h5" html-tag="div" v-text="'Header slot'"/>
-      <n-text weight="light" font-size="small" html-tag="div" v-text="'Beautiful, fast and modern Vue 3 UI library.'"/>
+      <n-text weight="medium" font-size="h5" html-tag="div" :text="'Header slot'"/>
+      <n-text weight="light" font-size="small" html-tag="div" :text="'Beautiful, fast and modern Vue 3 UI library.'"/>
     </template>
 
     <template #default>

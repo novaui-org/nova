@@ -8,7 +8,10 @@
     :is="htmlTag"
     :style="style"
   >
-    <slot/>
+    <slot v-if="$slots.default"/>
+    <template v-else>
+      {{ text }}
+    </template>
   </component>
 </template>
 

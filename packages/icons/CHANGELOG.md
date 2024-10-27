@@ -3,7 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2-next.0](https://github.com/novaui-org/nova/compare/v0.1.1...v0.1.2-next.0) (2024-10-27)
+
+
+
+## [0.1.1-next.0](https://github.com/novaui-org/nova/compare/v0.0.1-next.7...v0.1.1-next.0) (2024-10-25)
+
+**Note:** Version bump only for package @nova-org/icons
+
+
+
+
+
 ## [0.1.1](https://github.com/novaui-org/nova/compare/v0.0.1-next.7...v0.1.1) (2024-10-25)
+
+## [0.1.1-next.0](https://github.com/novaui-org/nova/compare/v0.0.1-next.7...v0.1.1-next.0) (2024-10-25)
 
 
 

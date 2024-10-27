@@ -2,22 +2,22 @@
   <div class="props_table__container">
     <div class="props_table">
       <div class="props_table__header">
-        <n-text font-size="small" weight="regular" v-text="'Property'"/>
-        <n-text font-size="small" weight="regular" v-text="'Type'"/>
-        <n-text font-size="small" weight="regular" v-text="'Default value'"/>
-        <n-text font-size="small" weight="regular" v-text="'Description'"/>
+        <n-text font-size="small" weight="regular" :text="'Property'"/>
+        <n-text font-size="small" weight="regular" :text="'Type'"/>
+        <n-text font-size="small" weight="regular" :text="'Default value'"/>
+        <n-text font-size="small" weight="regular" :text="'Description'"/>
       </div>
 
       <div class="props_table__content">
         <template v-for="(apiProp, index) in apiProps" :key="apiProp.name">
           <div class="props_table__row">
             <div class="props_table__row-property">
-              <n-text font-size="paragraph-2" weight="medium" v-text="apiProp.name"/>
+              <n-text font-size="paragraph-2" weight="medium" :text="apiProp.name"/>
               <n-text
                 :style="{color: apiProp.required ? '#EE09C8' : '#0970EE'}"
                 font-size="paragraph-2"
                 weight="light"
-                v-text="apiProp.required ? 'required' : 'optional'"
+                :text="apiProp.required ? 'required' : 'optional'"
               />
             </div>
 
@@ -30,7 +30,7 @@
                   weight="medium"
                   font-size="small"
                   class="props_table__row-type-item"
-                  v-text="typeItem"
+                  :text="typeItem"
                 />
               </template>
               <n-text
@@ -39,20 +39,20 @@
                 weight="medium"
                 font-size="small"
                 class="props_table__row-type-item"
-                v-text="apiProp.type"
+                :text="apiProp.type"
               />
             </div>
             <n-text
               class="props_table__row-default-value"
               weight="medium"
               font-size="small"
-              v-text="apiProp.default ?? ' '"
+              :text="apiProp.default ?? ' '"
             />
             <n-text
               class="props_table__row-type-description"
               weight="light"
               font-size="small"
-              v-text="apiProp.description"
+              :text="apiProp.description"
             />
           </div>
           <n-divider v-if="(index + 1) < apiProps.length"/>
