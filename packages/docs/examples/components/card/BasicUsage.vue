@@ -1,8 +1,8 @@
 <!-- #region template -->
 <template>
   <n-card>
-    <n-text weight="medium" font-size="paragraph" html-tag="div" v-text="'Outline'"/>
-    <n-text weight="light" font-size="small" html-tag="div" v-text="'Modern and responsive.'"/>
+    <n-text weight="medium" font-size="paragraph" html-tag="div" :text="'Outline'"/>
+    <n-text weight="light" font-size="small" html-tag="div" :text="'Modern and responsive.'"/>
   </n-card>
 </template>
 <!-- #endregion template -->

@@ -3,6 +3,8 @@ import DisplayContainer from '../examples/partials/DisplayContainer.vue'
 
 import Single from '../examples/transitions/slide-horizontal/Single.vue'
 import Multiple from '../examples/transitions/slide-horizontal/Multiple.vue'
+import PropsTable from '../examples/partials/PropsTable.vue'
+import SlotsTable from '../examples/partials/SlotsTable.vue'
 </script>
 
 # Slide transition - horizontal
@@ -53,3 +55,14 @@ elements.
 <<< @/examples/transitions/slide-horizontal/Multiple.vue#script [Script]
 <<< @/examples/transitions/slide-horizontal/Multiple.vue#style [Style]
 :::
+
+## API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NSlideTransitionHorizontal.json"/>
+
+### Slots
+
+<slots-table class="n-mt-24" path="components/NSlideTransitionHorizontal.json"/>
+

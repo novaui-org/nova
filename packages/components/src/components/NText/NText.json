@@ -1,0 +1,51 @@
+{
+  "props": {
+    "weight": {
+      "type": [
+        "thin",
+        "light",
+        "regular",
+        "medium",
+        "bold",
+        "bolder"
+      ],
+      "description": "Font weight.",
+      "default": "regular"
+    },
+    "font-size": {
+      "type": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "paragraph",
+        "paragraph-2",
+        "small"
+      ],
+      "description": "Font size.",
+      "default": "paragraph"
+    },
+    "html-tag": {
+      "type": "string",
+      "description": "Specify html tag of rendered html element.",
+      "default": "span"
+    },
+    "visible-lines": {
+      "type": "number",
+      "description": "Specify no. of visible lines, other lines will be hidden.",
+      "default": "span"
+    },
+    "text": {
+      "type": "string",
+      "description": "Text content of element - use it instead of 'v-text'. Default slot has priority over this property.",
+      "default": "span"
+    }
+  },
+  "slots": {
+    "default": {
+      "description": "Default slot for content. Has priority over 'text' property."
+    }
+  }
+}

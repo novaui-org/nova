@@ -1,0 +1,59 @@
+{
+  "props": {
+    "radius": {
+      "type": [
+        "full",
+        "lg",
+        "md",
+        "sm",
+        "none"
+      ],
+      "description": "Border radius of the card.",
+      "default": "lg"
+    },
+    "variant": {
+      "type": [
+        "outline",
+        "flat",
+        "shadow-1",
+        "shadow-2"
+      ],
+      "description": "Design of the card.",
+      "default": "outline"
+    },
+    "hoverable": {
+      "type": "boolean",
+      "description": "Allow hover effect for card and change cursor to pointer.",
+      "default": false
+    },
+    "size": {
+      "type": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "description": "Card padding size.",
+      "default": "md"
+    },
+    "divider": {
+      "type": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "description": "Divider between header, default and footer slots.",
+      "default": "none"
+    }
+  },
+  "slots": {
+    "default": {
+      "description": "The default slot is the main area for primary content, like descriptions, images, or interactive elements."
+    },
+    "header": {
+      "description": "Ideal for titles or introductory information, such as headings, icons, or brief summaries that give context to the card."
+    },
+    "footer": {
+      "description": "For actions or supporting details, like buttons, links, or metadata that complement the main content."
+    }
+  }
+}

@@ -12,7 +12,7 @@
     <slot name="before"/>
     <n-icon v-if="iconLeft" :name="iconLeft" :size="iconSize"/>
 
-    <n-text v-if="label" font-size="small" weight="medium" v-text="label"/>
+    <n-text v-if="label" font-size="small" weight="medium" :text="label"/>
     <slot v-else name="default"/>
 
     <n-icon v-if="iconRight" :name="iconRight" :size="iconSize"/>
