@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2-next.0](https://github.com/novaui-org/nova/compare/v0.1.1...v0.1.2-next.0) (2024-10-27)
+
+
+### Features
+
+* **components, docs:** add text prop to n-text to overcome v-text ssr issues ([8f4ce36](https://github.com/novaui-org/nova/commit/8f4ce36c7f9fde0b28d2a5e0ae28c32e91d7b092))
+* **docs, components:** add api docs ([ca4cb52](https://github.com/novaui-org/nova/commit/ca4cb52df11d30d139c7a94177261d937bb75315))
+* **docs, components:** add api docs for rest of the components ([b5f469d](https://github.com/novaui-org/nova/commit/b5f469d46cb29b49b327e586f79e7d06f671f06b))
+
+
+
+## [0.1.1-next.0](https://github.com/novaui-org/nova/compare/v0.0.1-next.7...v0.1.1-next.0) (2024-10-25)
+
+
+
+
+
 ## [0.1.1](https://github.com/novaui-org/nova/compare/v0.0.1-next.7...v0.1.1) (2024-10-25)
 
 
