@@ -1,7 +1,7 @@
 {
   "name": "@nova-org/storybook",
   "private": true,
-  "version": "0.1.2-next.0",
+  "version": "0.1.2",
   "author": "Jozef Majzel <jozefmajzel1@gmail.com>",
   "homepage": "https://novaui-org.github.io/nova/",
   "repository": {
