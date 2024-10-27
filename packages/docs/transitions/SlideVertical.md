@@ -3,6 +3,8 @@ import DisplayContainer from '../examples/partials/DisplayContainer.vue'
 
 import Single from '../examples/transitions/slide-vertical/Single.vue'
 import Multiple from '../examples/transitions/slide-vertical/Multiple.vue'
+import PropsTable from '../examples/partials/PropsTable.vue'
+import SlotsTable from '../examples/partials/SlotsTable.vue'
 </script>
 
 # Slide transition - vertical
@@ -51,3 +53,14 @@ Slide transition (vertical) animates element's:
 <<< @/examples/transitions/slide-vertical/Multiple.vue#template [Template]
 <<< @/examples/transitions/slide-vertical/Multiple.vue#script [Script]
 :::
+
+## API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NSlideTransition.json"/>
+
+### Slots
+
+<slots-table class="n-mt-24" path="components/NSlideTransition.json"/>
+

@@ -8,6 +8,8 @@ import WithDescriptionAndValidation from '../examples/components/checkbox/WithDe
 import WithHint from '../examples/components/checkbox/WithHint.vue'
 import Single from '../examples/components/checkbox/Single.vue'
 import DisplayContainer from '../examples/partials/DisplayContainer.vue'
+import PropsTable from '../examples/partials/PropsTable.vue'
+import SlotsTable from '../examples/partials/SlotsTable.vue'
 </script>
 
 # Checkbox
@@ -128,3 +130,25 @@ Using **disabled** on **NCheckbox** disables only a concrete option.
 <<< @/examples/components/checkbox/WithHint.vue#template [Template]
 <<< @/examples/components/checkbox/WithHint.vue#script [Script]
 :::
+
+## Checkbox API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NCheckbox.json"/>
+
+### Slots
+
+<slots-table class="n-mt-24" path="components/NCheckbox.json"/>
+
+
+## Options group API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NOptionsGroup.json"/>
+
+### Slots
+
+<slots-table class="n-mt-24" path="components/NOptionsGroup.json"/>
+

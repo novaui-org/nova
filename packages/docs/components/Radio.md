@@ -7,6 +7,8 @@ import WithValidation from '../examples/components/radio/WithValidation.vue'
 import WithDescriptionAndValidation from '../examples/components/radio/WithDescriptionAndValidation.vue'
 import WithHint from '../examples/components/radio/WithHint.vue'
 import DisplayContainer from '../examples/partials/DisplayContainer.vue'
+import PropsTable from '../examples/partials/PropsTable.vue'
+import SlotsTable from '../examples/partials/SlotsTable.vue'
 </script>
 
 # Radio
@@ -111,3 +113,24 @@ Using **disabled** on **NRadio** disables only a concrete option.
 <<< @/examples/components/radio/WithHint.vue#template [Template]
 <<< @/examples/components/radio/WithHint.vue#script [Script]
 :::
+
+## Radio API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NRadio.json"/>
+
+### Slots
+
+<slots-table class="n-mt-24" path="components/NRadio.json"/>
+
+## Options group API
+
+### Props
+
+<props-table class="n-mt-24" path="components/NOptionsGroup.json"/>
+
+### Slots
+
+<slots-table class="n-mt-24" path="components/NOptionsGroup.json"/>
+

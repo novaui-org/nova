@@ -1,0 +1,48 @@
+{
+  "props": {
+    "label": {
+      "type": "string",
+      "description": "Component label.",
+      "required": true
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "Put component into disabled state.",
+      "default": "false"
+    },
+    "error": {
+      "type": "boolean",
+      "description": "Does field have validation errors?",
+      "default": "false"
+    },
+    "success": {
+      "type": "boolean",
+      "description": "Does field passed validation?",
+      "default": "false"
+    },
+    "error-message": {
+      "type": "string",
+      "description": "Specify error message displayed when 'error' property is set to 'true'.",
+      "default": "false"
+    },
+    "error-icon": {
+      "type": "NovaIcons",
+      "description": "Name of icon from NovaIcons. Make sure you have the icon library installed",
+      "default": "vuesax/linear/info-circle"
+    },
+    "success-icon": {
+      "type": "NovaIcons",
+      "description": "Name of icon from NovaIcons. Make sure you have the icon library installed",
+      "default": "vuesax/linear/tick-circle"
+    },
+    "hint": {
+      "type": "string",
+      "description": "Display hint for under the default slot."
+    }
+  },
+  "slots": {
+    "default": {
+      "description": "Default slot can be used for NCheckbox or NRadio components."
+    }
+  }
+}

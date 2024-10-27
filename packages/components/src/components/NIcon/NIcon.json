@@ -1,0 +1,21 @@
+{
+  "props": {
+    "name": {
+      "type": "NovaIcons",
+      "description": "Name of icon from NovaIcons. Make sure you have the icon library installed",
+      "required": true
+    },
+    "size": {
+      "type": "string",
+      "description": "Size of icon in CSS units.",
+      "default": "16px"
+    },
+    "color": {
+      "type": "string",
+      "description": "Color of icon in CSS units including Nova color palette.",
+      "default": "inherit"
+    }
+  },
+  "slots": {
+  }
+}

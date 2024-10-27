@@ -1,0 +1,49 @@
+{
+  "props": {
+    "model-value": {
+      "type": "string",
+      "description": "Model of the component. Either use this property (along with a listener for 'update:model-value' event) or use 'v-model' directive.",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "description": "Specify radio value, when used 'string[]' for 'model-value'."
+    },
+    "label": {
+      "type": "string",
+      "description": "Radio label. Default slot has priority over this property."
+    },
+    "name": {
+      "type": "string",
+      "description": "Native input name property. Submitted with the form as part of a name/value pair."
+    },
+    "size": {
+      "type": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "description": "Change the size of the component.",
+      "default": "md"
+    },
+    "description": {
+      "type": "string",
+      "description": "Useful for specifying longer description for input field."
+    },
+    "color": {
+      "type": "string",
+      "description": "Color of icon in CSS units including Nova color palette.",
+      "default": "n-primary"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "Put component into disabled state.",
+      "default": "false"
+    }
+  },
+  "slots": {
+    "default": {
+      "description": "Default slot can be used as label. Has priority over 'label' property."
+    }
+  }
+}
